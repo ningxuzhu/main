@@ -159,5 +159,5 @@ $\int_{C_0}f(z)dz=\int_{C_1}f(z)dz+\int_{C_2}f(z)dz+...+\int_{C_n}f(z)dz$
 若$f(z)$在单连通区域$D$内解析$H(z)$是$f(z)$的**任一**原函数，$\forall z_0,z\in D$\
 $F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
 
-$Q:how$ $to$ $proof?$
+$Q:how$ $to$ $prove?$
 
