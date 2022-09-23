@@ -146,3 +146,18 @@ $$\oint_{C}\frac{1}{(z-a)^n}dz=
 ### 柯西积分定理
 闭域$\bar{D}$内一闭路$C$围成单连通区域，$f(z)$在$\bar{D}$内解析，则$\oint_{C}f(z)dz=0$\
 考虑：是闭路？奇点在内？
+
+### 多连通区域的柯西积分定理
+$Def$复闭路：$C_0,C_1,...,C_n$为$n+1$条**简单**闭曲线，$C=C_0+C_1^-+...+C_n^-$且满足：\
+$1.C_0,C_1,...,C_n$都在$C_0$内；\
+$2.C_0,C_1,...,C_n$互不接触；
+
+$\bar{D}(=\bar{D_1}+\bar{D_2}+...+\bar{D_n})$为$C_0$内的多连通区域，若$f(z)$在$\bar{D}$上解析，则$\int_{C}f(z)dz=0$
+
+$\int_{C_0}f(z)dz=\int_{C_1}f(z)dz+\int_{C_2}f(z)dz+...+\int_{C_n}f(z)dz$
+### $Newton-Leibniz$ $eqution$
+若$f(z)$在单连通区域$D$内解析$H(z)$是$f(z)$的**任一**原函数，$\forall z_0,z\in D$\
+$F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
+
+$Q:how$ $to$ $proof?$
+
