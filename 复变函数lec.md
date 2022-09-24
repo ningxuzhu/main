@@ -91,7 +91,7 @@ $z=0,z=\infty$是$w=\sqrt[n]{z}$的支点
 
 $w=\sqrt{z^2-1},w=\sqrt[4]{\frac{z(1-z)^{3}}{(z+i)^{4}}}$的支点？
 #### 支割线
-连接$f(z)$任意两支点的**简单**曲线\
+连接$f(z)$任意两支点的**简单**曲线
 目的：防止曲线包围支点
 #### 单值解析分支
 第$k$支的表达式为$w_{k}=\sqrt[n]{r}exp(i\frac{argz+2k\pi}{n}),k=0,1,2,...,n-1$
@@ -108,9 +108,9 @@ $\forall z\neq0,\exist Lnz,u=ln|z|,v=Argz,Lnz=ln|z|+i(argz+2k\pi)$
 
 支点：$z=0,\infty$
 
-
-$-\pi<argz<\pi\Rightarrow(2k-1)\pi<Imw_{k}<(2k-1)\pi$\
+$-\pi<argz<\pi\Rightarrow(2k-1)\pi<Imw_{k}<(2k-1)\pi$
 $w$把$z$的角域映为条形域
+
 ### 三角函数$sinz=\frac{(e^{iz}-e^{-iz})}{2i},cosz=\frac{(e^{iz}+e^{-iz})}{2}$
 1.三角函数是欧拉公式在$\mathbb{C}$上的推广
 
@@ -118,8 +118,9 @@ $w$把$z$的角域映为条形域
 ### 双曲函数$sinhz=\frac{(e^{z}-e^{-z})}{2},coshz=\frac{(e^{z}+e^{-z})}{2}$
 注意：$sinz,cosz,sinhz,coshz$无界
 
-$cosh(a+b)=coshacoshb+sinhasinhb$\
+$cosh(a+b)=coshacoshb+sinhasinhb$
 $sinh(a+b)=sinhacoshb+coshasinhb$
+
 ### 反三角函数$e.g.(w=Arcsinz)$
 解法：两边取三角函数，令$e^{iz}=\beta$，求解关于$\beta$的一元二次方程，最后两边取$Ln$
 ### 一般幂函数$w=z^\alpha=e^{\alpha  Lnz}$
@@ -144,19 +145,19 @@ $$\oint_{C}\frac{1}{(z-a)^n}dz=
 长大不等式：$|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
 ## $class8$
 ### 柯西积分定理
-闭域$\bar{D}$内一闭路$C$围成单连通区域，$f(z)$在$\bar{D}$内解析，则$\oint_{C}f(z)dz=0$\
+闭域$\bar{D}$内一闭路$C$围成单连通区域，$f(z)$在$\bar{D}$内解析，则$\oint_{C}f(z)dz=0$
 考虑：是闭路？奇点在内？
 
 ### 多连通区域的柯西积分定理
-$Def$复闭路：$C_0,C_1,...,C_n$为$n+1$条**简单**闭曲线，$C=C_0+C_1^-+...+C_n^-$且满足：\
-$1.C_0,C_1,...,C_n$都在$C_0$内；\
+$Def$复闭路：$C_0,C_1,...,C_n$为$n+1$条**简单**闭曲线，$C=C_0+C_1^-+...+C_n^-$且满足：
+$1.C_0,C_1,...,C_n$都在$C_0$内；
 $2.C_0,C_1,...,C_n$互不接触；
 
 $\bar{D}(=\bar{D_1}+\bar{D_2}+...+\bar{D_n})$为$C_0$内的多连通区域，若$f(z)$在$\bar{D}$上解析，则$\int_{C}f(z)dz=0$
 
 $\int_{C_0}f(z)dz=\int_{C_1}f(z)dz+\int_{C_2}f(z)dz+...+\int_{C_n}f(z)dz$
 ### $Newton-Leibniz$ $eqution$
-若$f(z)$在单连通区域$D$内解析$H(z)$是$f(z)$的**任一**原函数，$\forall z_0,z\in D$\
+若$f(z)$在单连通区域$D$内解析$H(z)$是$f(z)$的**任一**原函数，$\forall z_0,z\in D$
 $F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
 
 $Q:how$ $to$ $prove?$
