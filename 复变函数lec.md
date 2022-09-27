@@ -13,20 +13,23 @@ arctan \frac{y}{x} &\text{一、四象限} \\
 arctan \frac{y}{x}+\pi &\text{第二象限} \\
 arctan \frac{y}{x}-\pi &\text{第三象限} 
 \end{cases}$$ 
+### $Tips$：
 1.**$arg\in(-\pi,\pi]$**
 
-3.$arg0$ 无意义
+2.$arg0$ 无意义
 
-2.$|z|^{2}=z\bar{z}$
+3.$|z|^{2}=z\bar{z}$
+
+4.指数式前不能出现负号
 ## $class2$
 ### 复数的开方(de Moivre公式)以n为周期，有n个值(内接圆正n边形顶点)
 #### $z_{0}是z_{n}的极限即\lim\limits_{n\rightarrow\infty}|z_{n}-z_{0}|=0$
 
-### 一些概念:
+### $Some$ $Definition$:
 #### 复平面(开复平面或有限平面) && 闭复平面或扩充平面
 #### 区域：非空，开集(无膜)，连通(任意内点用全在区域中的折线连接) vs 闭区域(有膜)
-#### 有界集：可包含在以原点为中心的某一圆内。无界集不可
-#### Jordan曲线(简单曲线)：无重点且连续
+#### 有界集：可包含在以原点为中心的某一圆内
+#### $Jordan$曲线(简单曲线)：无重点且连续
 #### 任一简单<font color=red>闭</font>曲线分平面为两区域，其中有界集称为内区域，无界集称为外区域
 $$区域
 \begin{cases}
@@ -43,15 +46,17 @@ $$区域
 #### 法一：1.求映照$w$确定的两个实变函数。2.将原像曲线方程与函数对应方程联立，消$x,y$得到关于$u，v$的方程。
 #### 法二：将原像方程写成关于$z$的方程，再带入逆映照。
 ### 函数的极限
-$\forall \varepsilon>0$，当$|z-z_{0}|<\delta$时有$|f(z)-w_{0}|<\varepsilon$则称当$z$趋向于$z_{0}$时，$f(z)$的极限值是$w_{0}$
+$\forall \varepsilon>0$，$\exists\delta>0$，当$|z-z_{0}|<\delta$时，有$|f(z)-w_{0}|<\varepsilon$，则称当$z$趋向于$z_{0}$时，$f(z)$的极限值是$w_{0}$
 ### 函数的连续
-若$\lim\limits_{z\rightarrow z_{0}}f(z)=f(z_{0})，$那么称$f(z)$在$z_{0}$连续，推广至区域$D$连续记为$f(z)\in C(D)$
+若$\lim\limits_{z\rightarrow z_{0}}f(z)=f(z_{0})$，那么称$f(z)$在$z_{0}$连续，推广至区域$D$连续记为$f(z)\in C(D)$
 
-连续充要条件：$u(x,y),v(x,y)$连续
+函数连续的充要条件：$u(x,y),v(x,y)$连续
 
-结论：多项式在复平面处处连续，有理分式在除去使分母为0的点连续
+#### 结论：
 
-$argz$在$z=0$与$x<0$时不连续
+1.多项式在复平面处处连续，有理分式在除去使分母为0的点连续
+
+2.$argz$在$z=0$与$x<0$时不连续
 ## $class4$
 ### 函数的导数
 $w=f(z)$在$z$的某个邻域内有定义，若$\lim\limits_{\Delta z\rightarrow0}\frac{f(z+\Delta)-f(z)}{\Delta z}$存在，则称$f(z)$在$z$可微
@@ -60,8 +65,9 @@ $f(z)$在$z_{0}$的某个邻域$(|z-z_{0}|<\delta)$内<font color=red>每一点<
 ### 奇点
 $f(z)$在$z_{0}$的任一领域内都有不可微的点，则称$z_{0}$为$f(z)$的奇点
 
-结论：$f(z)=\bar{z}$处处不可微，处处不解析
-### Cauchy-Riemann function(判断可微的充要条件)
+#### 结论：
+$f(z)=\bar{z}$ 处处不可微，处处不解析
+### $Cauchy-Riemann$ $function$(判断可微的充要条件)
 设$f(z)=u(x,y)+iv(x,y)$定义在区域$D$内，则$f(z)$在点$z=x+iy\in D$可微的充要条件是：
 $$
 \begin{cases}
@@ -111,14 +117,17 @@ $\forall z\neq0,\exist Lnz,u=ln|z|,v=Argz,Lnz=ln|z|+i(argz+2k\pi)$
 $-\pi<argz<\pi\Rightarrow(2k-1)\pi<Imw_{k}<(2k-1)\pi$
 $w$把$z$的角域映为条形域
 
-### 三角函数$sinz=\frac{(e^{iz}-e^{-iz})}{2i},cosz=\frac{(e^{iz}+e^{-iz})}{2}$
+### 三角函数$sinz=\frac{(e^{iz}-e^{-iz})}{2\textbf{i}},cosz=\frac{(e^{iz}+e^{-iz})}{2}$
 1.三角函数是欧拉公式在$\mathbb{C}$上的推广
 
 2.$|sinz|=|sin(x+iy)|$，利用倍角公式得$|sinz|=\sqrt{cos^2hy-cos^2x}$
+
+$Exercise：$
 ### 双曲函数$sinhz=\frac{(e^{z}-e^{-z})}{2},coshz=\frac{(e^{z}+e^{-z})}{2}$
 注意：$sinz,cosz,sinhz,coshz$无界
 
 $cosh(a+b)=coshacoshb+sinhasinhb$
+
 $sinh(a+b)=sinhacoshb+coshasinhb$
 
 ### 反三角函数$e.g.(w=Arcsinz)$
@@ -128,9 +137,11 @@ $sinh(a+b)=sinhacoshb+coshasinhb$
 ### 函数的积分
 条件：$f(z)$在（逐段）**光滑**曲线上**连续**
 $$\int_{C}f(z)dz=\int_{C}udx-vdy+i\int_{C}vdx+udy$$
-#### 参数法求积分(不解析函数只能用此办法)
+#### 参数法求积分(不解析函数只能用此办法，含$|dz|,\bar{z}$一般也用)
 $t$为参数且$a\leqslant t\leqslant b$，  正方向为逆时针方向
+
 $$\int_{C}f(z)dz=\int_{a}^{b}f(z(t))z'(t)dt$$
+
 直线参数方程：$z=$(终点$-$起点)$t+$起点（$0\leqslant t\leqslant1$）
 
 圆的参数方程：$z=$圆心$+$半径$e^{i\theta}$（$\theta$从圆心计算）
@@ -142,10 +153,15 @@ $$\oint_{C}\frac{1}{(z-a)^n}dz=
 2\pi i & n=1\\
 0      & n\neq1\\
 \end{cases}$$
+
+
+
 长大不等式：$|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
+
 ## $class8$
 ### 柯西积分定理
 闭域$\bar{D}$内一闭路$C$围成单连通区域，$f(z)$在$\bar{D}$内解析，则$\oint_{C}f(z)dz=0$
+
 考虑：是闭路？奇点在内？
 
 ### 多连通区域的柯西积分定理
@@ -161,4 +177,22 @@ $\int_{C_0}f(z)dz=\int_{C_1}f(z)dz+\int_{C_2}f(z)dz+...+\int_{C_n}f(z)dz$
 $F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
 
 $Q:how$ $to$ $prove?$
+
+## $class9$
+### 柯西积分公式
+若$f(z)$在闭路$C$及其所谓区域$D$内解析，则$\forall a_0\in D$
+$$\int_{C}\frac{f(z)}{z-a_0}dz=2\pi if(a_0)$$
+注意：$z$前的系数必为1
+
+$prove?$ 连续&长大不等式，难点：构造出$f(z)$
+### 高阶导数积分公式
+$\forall a_0\in D，$$f(z)$有任意阶导数！！
+$$\int_{C}\frac{f(z)}{(z-a_0)^n}dz=\frac{2\pi i}{(n-1)!}f^{(n-1)}(a_0)$$
+$prove?$ $definition$&归纳&长大不等式，难点：$k-1\rightarrow k$
+
+
+
+
+
+
 
