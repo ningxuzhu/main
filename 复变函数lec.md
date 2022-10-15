@@ -3,12 +3,8 @@
 # 复变函数重点
 ## $class1$
 ### 辐角主值的计算：
-$$arg=
+$$arg(x+iy)=
 \begin{cases}
-0& \text{正实轴}\\
-\pi& \text{负实轴}\\
-\pi/2& \text{上半虚轴} \\
--\pi/2& \text{下半虚轴} \\
 arctan \frac{y}{x} &\text{一、四象限} \\
 arctan \frac{y}{x}+\pi &\text{第二象限} \\
 arctan \frac{y}{x}-\pi &\text{第三象限} 
@@ -18,9 +14,9 @@ arctan \frac{y}{x}-\pi &\text{第三象限}
 
 2.$arg0$ 无意义
 
-3.$|z|^{2}=z\bar{z}$
+3.$|z|^{2}=z\bar{z},|z|=\textcolor{red}{\sqrt{x^2+y^2}}$
 
-4.指数式前不能出现负号
+4.指数式的标准形式：$r(实数)e^{i\theta}$
 ## $class2$
 ### 复数的开方(de Moivre公式)以n为周期，有n个值(内接圆正n边形顶点)
 #### $z_{0}是z_{n}的极限即\lim\limits_{n\rightarrow\infty}|z_{n}-z_{0}|=0$
@@ -67,7 +63,9 @@ $f(z)$在$z_{0}$的任一领域内都有不可微的点，则称$z_{0}$为$f(z)$
 
 #### 结论：
 $f(z)=\bar{z}$ 处处不可微，处处不解析
-### $Cauchy-Riemann$ $function$(判断可微的充要条件)
+
+$f(z)$解析，若$|f(z)|=const.$，则$f(z)=const.$
+### $Cauchy-Riemann$ 等式(判断可微的充要条件)
 设$f(z)=u(x,y)+iv(x,y)$定义在区域$D$内，则$f(z)$在点$z=x+iy\in D$可微的充要条件是：
 $$
 \begin{cases}
@@ -156,24 +154,17 @@ $$\oint_{C}\frac{1}{(z-a)^n}dz=
 
 
 
-长大不等式：$|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
+### 长大不等式
+$|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
 
 ## $class8$
 ### 柯西积分定理
-闭域$\bar{D}$内一闭路$C$围成单连通区域，$f(z)$在$\bar{D}$内解析，则$\oint_{C}f(z)dz=0$
+闭域$\bar{D}$内闭路$\widetilde{C}$围成单（多）连通区域，$f(z)$在$\bar{D}$内解析，则$\int_{C}f(z)dz=0$
 
 考虑：是闭路？奇点在内？
-
-### 多连通区域的柯西积分定理
-$Def$复闭路：$C_0,C_1,...,C_n$为$n+1$条**简单**闭曲线，$C=C_0+C_1^-+...+C_n^-$且满足：
-$1.C_0,C_1,...,C_n$都在$C_0$内；
-$2.C_0,C_1,...,C_n$互不接触；
-
-$\bar{D}(=\bar{D_1}+\bar{D_2}+...+\bar{D_n})$为$C_0$内的多连通区域，若$f(z)$在$\bar{D}$上解析，则$\int_{C}f(z)dz=0$
-
-$\int_{C_0}f(z)dz=\int_{C_1}f(z)dz+\int_{C_2}f(z)dz+...+\int_{C_n}f(z)dz$
-### $Newton-Leibniz$ $eqution$
+### $Newton-Leibniz$ 等式
 若$f(z)$在单连通区域$D$内解析$H(z)$是$f(z)$的**任一**原函数，$\forall z_0,z\in D$
+
 $F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
 
 $Q:how$ $to$ $prove?$
@@ -184,15 +175,60 @@ $Q:how$ $to$ $prove?$
 $$\int_{C}\frac{f(z)}{z-a_0}dz=2\pi if(a_0)$$
 注意：$z$前的系数必为1
 
-$prove?$ 连续&长大不等式，难点：构造出$f(z)$
+$prove?$ 连续+长大不等式，难点：构造出$f(z)$
 ### 高阶导数积分公式
 $\forall a_0\in D，$$f(z)$有任意阶导数！！
 $$\int_{C}\frac{f(z)}{(z-a_0)^n}dz=\frac{2\pi i}{(n-1)!}f^{(n-1)}(a_0)$$
-$prove?$ $definition$&归纳&长大不等式，难点：$k-1\rightarrow k$
+$prove?$ $definition$+归纳+长大不等式，难点：$k-1\rightarrow k$
+## $class10$
+### 平均值公式（边界决定内部）
+$f(z)$在闭圆$|z-a|\leqslant R$内解析
+$$f(z)=\frac{1}{2\pi R}\int_{|z-a|=R}f(\zeta)ds$$
+### 最大模原理
+$f(z)$在有界区域$D+C$上解析且不恒等于常数，则$\exist a\in C,s.t.|f(z)|_{max}=|f(a)|$
 
 
+### 柯西不等式（解析函数导数模的估计）
+设$f(z)$在$|z|\leqslant R$上解析，且边界上的最大值为$M(R)$，则有
+$$|f^{(n)}(z)|\leqslant \frac{n!M(R)}{R^n}$$
 
+### $Liouville$定理
+不恒为常数的整函数模无界
 
+### $ex:$
+证明：$f'(a)=\frac{1}{\pi r}\int_0^{2\pi}Re[f(a+re^{i\theta})]e^{-i\theta}d\theta$
 
+难点：运用柯西积分定理+取共轭
 
+$Tip:$对零点问题用反证+取倒数+最大模原理
+
+$Tip:$对外部解析的问题，构造更大的复闭路
+## $class 11$
+### 调和函数
+$\Delta f=0$
+
+定理：$f$解析，其实部和虚部为共轭调和函数
+### 必出考题
+已知$u$调和，在$(x_0,y_0)$解析，求$f(z)$
+$$v(x,y)=\int_{(x_0,y_0)}^{(x,y)}\frac{\partial v}{\partial x}dx+\frac{\partial v}{\partial y}dy+\textcolor{red}{C}$$
+
+$$\stackrel{C-R}{\rightarrow}v(x,y)=\int_{(x_0,y_0)}^{(x,y)}-\frac{\partial u}{\partial y}dx+\frac{\partial u}{\partial x}dy+\textcolor{red}{C}$$
+
+$$v(x,y)=\int_{x_0}^{x}-\frac{\partial u}{\partial y}\textcolor{red}{\bigg|_{y=y_0}}dx+\int_{y_0}^{y}\frac{\partial u}{\partial x}\bigg|_{x=x}dy+\textcolor{red}{C}$$
+$$f(x,y)=u(x,y)+iv(x,y)\stackrel{x=z,y=0}{\longrightarrow}f(z)$$
+### 调和函数性质
+$u(z)$只能在$D$的边界$c$上取得$\bar{D}$上的最大值和最小值  
+构造$g(z)=e^{\pm u(z)\pm iv(z)}$，利用最大模原理即可
+## $class12$
+### 调和函数的泊松积分公式
+$f(z)$为调和函数，其在圆内任意点的值可以用圆周上的积分表示出来（柯西积分公式+柯西积分定理$z=\frac{R^2}{r}$）
+$$f(z_0+re^{i\varphi})=\frac{1}{2\pi}\int_{0}^{2\pi}\frac{R^2-r^2}{R^2-2rRcos(\theta-\varphi)+r^2}f(z_0+re^{i\varphi})d\theta$$
+### 级数
+部分和定义！ 一致收敛的定义！ $Cauchy$收敛准则
+#### $\sum_{n=0}^{\infty}z^n$的敛散性：
+$|z|<1$时收敛，$\sum_{n=0}^{\infty}z^n=\frac{1}{1-z}$ 但不绝对收敛(?)
+
+$|z|\geqslant1$时发散（逐项不收敛）
+
+$|z|\leqslant r,$ $0<r<1$强级数绝对收敛
 
