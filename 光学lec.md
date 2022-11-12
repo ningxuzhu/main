@@ -22,6 +22,7 @@ $$\delta\int_Q^Pndl=0$$
 将物点移到原来的像点位置，并使光线沿反方向射入光具组，像点将出现在原来的物点位置上。这样的一对物像点被称为共轭点。
 #### 光学系统严格成像的条件
 1.同心性不变：由物点发出的同心光束通过光具组后保持同心性不变。
+
 2.等光程成像：由物点发出的所有光线通过光具组后均应以相等的光程到达像点。
 透镜往往难以形成共轭点。$specially$：齐明点
 
@@ -90,54 +91,47 @@ $$\frac{\delta x'}{\delta x}=-\frac{f^2}{x^2}$$
 
 小光圈+短焦镜头+远距离$\rightarrow$大景深
 
-$$像差
-\begin{cases}
-\text{球面像差：轴上物点发出的大孔径光线不聚焦于一点}\\
-\text{彗形像差：轴外物点发出的宽光束不再交于一点} \\
-\text{像散：子午交线，弧失焦线，明晰圈}\\
-\text{像场弯曲：明晰圈的轨迹一般是个曲面}\\
-\text{色差}\\
-\end{cases}$$
+像差：见PPT
+
 ## $class9$
 
 投影仪：$s\approx f$
 
 照相机：$s'\approx f$
+
 #### 眼睛
+
 远点：无穷远；近点：明视距离
+
 #### 和眼睛直接相关的两种仪器（需要考虑到眼睛特性）
+
 对于眼睛前的放大镜和目镜：
 
 由于眼睛的特点，物体只能处于凸透镜焦点以内的一个小范围内，这个范围叫焦深
 
 物体的视角最大不超过$w=\frac{y}{s_0}$由牛顿公式，其对光心夹角为$w'=\frac{y}{f}$则放大镜视角放大率$M=\frac{s_0}{f}$，对不同放大倍率的目镜来说焦深$x=\frac{s_0}{M(M+1)}$
 
-显微镜：物在$f_0$附近，**第一次呈像在$f_e$附近**，最后呈像在明视距离$s_0$(25cm)外，角放大率$M\stackrel{?}{=}-\frac{\Delta s_0}{f_ef_o}$，其中$\Delta\approx$筒长
+显微镜：物在$f_0$附近，**第一次呈像在$f_e$附近**，最后呈像在明视距离$s_0$(25cm)外，角放大率$M\stackrel{?}{=}-\frac{\Delta s_0}{f_ef_o}$，其中$\Delta$为光学筒长
 
 望远镜：**第一次呈像在$f_e$附近**且$f_0'\approx f_e$，角放大率$M\stackrel{?}{=}-\frac{f_o'}{f_e}$
 #### 光瞳
 入射光瞳：孔径光阑在物方的共轭，大小用物镜横向放大率计算
 
 出射光瞳：孔径光阑在像方的共轭，大小用目镜横向放大率计算
+
 #### $E.Abbe$正弦条件
+
 傍轴物点以大孔径光束呈像的充要条件：$nysinu=n'y'sinu'$
+
 ## $class10$
-#### 光通量$\Phi$
-#### 发光强度
-$I=\frac{d\Phi}{d\Omega}$单位：candela
-#### 亮度
-$B=\frac{d\Phi}{d\Omega  dScos\theta}$单位：stilb
-#### 照度
-$E=\frac{d\Phi}{dS'}$单位：lux
-#### 面发光度
-$R=\frac{d\Phi}{dS}$
 
-只考虑一些余弦发射体，即半球发光可看成一个亮度均匀的圆盘发光，则$R=\pi B$
-
+#### 照度，亮度见$P98.5$
 
 #### 像的亮度
+
 $$\frac{B'}{B}=k(\frac{n'}{n})^2$$
 ![](D:\VScode文件\markdown\}L9OTRLYV[ULD439NXLSHJN.png)
+
 #### 像的照度
 
 $$E=\frac{\Phi'}{\sigma'}\stackrel{?}{=}\frac{k\pi Bu_0^2}{V^2}$$
@@ -199,7 +193,7 @@ $r_p=0,i_b+i_2=\frac{\pi}{2}$
 
 $i_b=arctan(\frac{n_2}{n_1})$
 #### 斯托克斯倒逆关系
-无论是$s$分量还是$p$分量，其内反射与外反射振幅反射比$r=-r'$，相应的振幅透射比（$t_s$与$t_s'$，$t_p$与$t_p'$）总是符号相同。 
+无论是$s$分量还是$p$分量，其内反射与外反射振幅反射比$r=-r'$，相应的振幅透射比（$t_s$与$t_s'$，$t_p$与$t_p'$）总是符号相同， $tt'+r^2=1$
 ## $class13$
 自然光经过偏振片强度变为原来的一半
 
@@ -215,12 +209,19 @@ $$I(P)=I_1(P)+I_2(p)+2\sqrt{I_1(P)I_2(P)}cos\delta(p)$$
 **2.存在相互平行的振动分量**
 
 **3.相位差$\delta(P)$稳定** $\delta$不固定则会出现$cos\delta$迅速变化使得$\overline{cos\delta}$为0
+
 ### 分波前干涉
+
 条纹间距为
+
 $$\Delta x=\frac{D}{d}\lambda$$
+
 #### 光强衬比度
+
 $$\gamma=\frac{2A_1A_2}{A_1^2+A_2^2}$$
+
 #### 平行光干涉场
+
 沿$x,y$方向的条纹间距为
 $$\begin{cases}
 \Delta x=\frac{\lambda}{sin\alpha_1-sin\alpha_2}\\
@@ -241,16 +242,85 @@ $\delta x=\Delta x,\delta s=b_1$得到光源极限宽度：$b_1=\frac{R}{d}\lamb
 #### 光源宽度与衬比度
 $$\gamma=|\frac{sinu}{u}|$$
 其中$u=\frac{b}{b_1}\pi$
-
-### 分振幅干涉
+## $class15$
+### 分振幅干涉$\Delta L=2nhcosi_2(\pm\frac{\lambda}{2})$
 等厚干涉
-$\Delta l=2ncosi(\pm\frac{\lambda}{2})$
-
 $$e.g\begin{cases}
-楔形薄膜\\
-\Delta x=\frac{D}{d}\lambda\\
+楔形薄膜\Delta x=\frac{\lambda}{2\alpha}\\
+牛顿环R=\frac{r^2_{k+m}-r^2_k}{m\lambda}中央级数最小，牛顿环向上移动，各级数变大\\
 \end{cases}$$
 
+等倾干涉：$\Delta L=2nhcosi_2(\pm\frac{\lambda}{2})$中央级数最大，增大$h$级数变大，有$l=N\frac{\lambda}{2}$
+### 迈克尔逊干涉仪
 
-等倾干涉
-$\Delta l=2nh(\pm\frac{\lambda}{2})$
+#### 光源非单色性对条纹的影响
+最大光程差（空间周期）
+$$\Delta L_M=\frac{2\pi}{\Delta k}=\frac{\lambda^2}{|\Delta \lambda|}$$
+#### 光源的时间相干性
+$\tau_0\Delta\nu\approx1$
+#### 光源的空间相干性
+$b\Delta \theta=\lambda$
+
+## $class16$
+### 法布里-珀罗干涉
+$$I_T=\frac{I_0}{1+\frac{4Rsin^2(\delta/2)}{(1-R)^2}}$$
+推导需要使用斯托克斯倒逆定理，可以看出，$R$增大，反射条纹亮线越来越宽，透射条纹亮线越来越窄
+
+由$\delta=\frac{4\pi nhcosi}{\lambda},n$和$h$一般是不变的，影响$\delta$变化的因素有$i$和$\lambda$
+
+$(1)\lambda$固定，则半角宽度为
+$$\Delta i=\frac{\lambda}{2\pi nhsini}\frac{1-R}{\sqrt{R}}$$
+$(2)i$固定(经常是0)，则某一纵模的半值宽度为
+$$\Delta \lambda=\frac{\lambda^2}{2\pi nhcosi}\frac{1-R}{\sqrt{R}}$$
+由于多光束干涉，使得在很宽的光谱范围内只有特定的波长附近出现极大$2nh=k\lambda_k,k\in\mathbb{Z}$，相邻极强频率间是等间隔的：$\Delta\nu=\frac{c}{2nh}$
+
+定义色分辨本领为：$\frac{\lambda}{\delta \lambda}$，自由光谱范围FSR？
+
+## $class17$
+
+### 菲涅尔圆孔衍射和圆屏衍射
+
+矢量图解$P151.5$
+
+半波带半径
+$$\rho_k=\sqrt{\frac{Rb}{R+b}k\lambda}\qquad (k=1,2,...)$$
+
+转化成透镜公式：
+$$\frac{1}{R}+\frac{1}{b}=\frac{k\lambda}{\rho_k^2}\qquad \text{即}f=\frac{\rho_1^2}{\lambda}$$
+
+## $class18$
+
+### 夫琅禾费单缝衍射和矩孔衍射
+
+矢量图解图像：$P154图7-4$
+
+光强分布：
+$$I_\theta=I_0(\frac{sin\alpha}{\alpha})^2$$
+其中$\alpha=\frac{\pi a}{\lambda}(sin\theta\pm sin\theta_0),\frac{sin\alpha}{\alpha}$为单缝衍射因子，$\theta_0$为入射光与单缝所在平面法线的夹角
+
+半角宽度
+$$\Delta\theta=\frac{\lambda}{acos\theta_0}$$
+应用：由巴比涅定律，细丝所呈衍射图像与单缝所呈图像完全一致，可以用来测细丝直径
+
+## $class19$
+
+### 光学仪器像分辨本领
+
+由于光学仪器光具组几乎都是圆形的，根据夫琅禾费圆孔衍射：$I_\theta=I_0[\frac{2J_1(x)}{x}]^2$，半角宽度为
+$$\Delta\theta=1.22\frac{\lambda}{D}$$
+由瑞利判据得光学仪器最小分辨角$\delta\theta_m=\Delta\theta$
+
+角放大率
+$$M=\frac{\delta\theta_e}{\delta\theta_m}$$
+$\delta\theta_e\approx1'=2.9\times10^{-4}rad$
+
+<font color=Blue>
+
+显微镜分辨本领$\delta y_m=\frac{0.61\lambda}{N.A.}$
+
+</font>
+
+### 多缝夫琅禾费衍射
+相关参数：光栅常数$d=a+b$，光栅有效长度$L=Nd$
+$$I_\theta=a_0^2(\frac{sin\alpha}{\alpha})^2(\frac{sinN\beta}{sin\beta})^2\qquad \alpha=\frac{\pi a}{\lambda}sin\theta\quad\beta=\frac{\pi d}{\lambda}sin\theta$$
+分析思路：矢量图解法（区别：衍射时$R\propto A_0$，干涉时$R\propto a_\theta$），单缝衍射因子和缝间干涉因子相乘实现相位调制，出现缺级

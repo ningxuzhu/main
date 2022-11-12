@@ -81,6 +81,7 @@ $z$的单叶性区域(平面角域)为：$0<|z|<+\infty, \frac{(2k-1)\pi}{n}<arg
 ### 根式函数$w=\sqrt[n]{z}$
 #### 辐角变化
 $z$平面上存在一条起点为$a$，终点为$b$的连续曲线。选定$arga\Rightarrow argb$被确定$\Delta_{l}argz=argb-arga$
+
 $$l是连续闭曲线
 \begin{cases}
 \Delta_{l}argz=2\pi& \text{原点在内}\\
@@ -121,7 +122,9 @@ $w$把$z$的角域映为条形域
 2.$|sinz|=|sin(x+iy)|$，利用倍角公式得$|sinz|=\sqrt{cos^2hy-cos^2x}$
 
 $Exercise：$
+
 ### 双曲函数$sinhz=\frac{(e^{z}-e^{-z})}{2},coshz=\frac{(e^{z}+e^{-z})}{2}$
+
 注意：$sinz,cosz,sinhz,coshz$无界
 
 $cosh(a+b)=coshacoshb+sinhasinhb$
@@ -129,14 +132,21 @@ $cosh(a+b)=coshacoshb+sinhasinhb$
 $sinh(a+b)=sinhacoshb+coshasinhb$
 
 ### 反三角函数$e.g.(w=Arcsinz)$
+
 解法：两边取三角函数，令$e^{iz}=\beta$，求解关于$\beta$的一元二次方程，最后两边取$Ln$
+
 ### 一般幂函数$w=z^\alpha=e^{\alpha  Lnz}$
+
 ## $class7$
+
 ### 函数的积分
+
 条件：$f(z)$在（逐段）**光滑**曲线上**连续**
 $$\int_{C}f(z)dz=\int_{C}udx-vdy+i\int_{C}vdx+udy$$
+
 #### 参数法求积分(不解析函数只能用此办法，含$|dz|,\bar{z}$一般也用)
-$t$为参数且$a\leqslant t\leqslant b$，  正方向为逆时针方向
+
+$t$为参数且$a\leqslant t\leqslant b$， 正方向为逆时针方向
 
 $$\int_{C}f(z)dz=\int_{a}^{b}f(z(t))z'(t)dt$$
 
@@ -152,17 +162,24 @@ $$\oint_{C}\frac{1}{(z-a)^n}dz=
 0      & n\neq1\\
 \end{cases}$$
 
-
-
 ### 长大不等式
+
 $|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
 
+### 小圆弧定理
+
+当$\rho$充分小，$f(z)$在$C_{\rho}:z=a+\rho e^{i\theta},\alpha\leqslant\theta\leqslant\beta$上连续，且$\lim\limits_{z\rightarrow a}(z-a)f(z)=k$，则$\lim\limits_{\rho\rightarrow 0}\int_{C_\rho}f(z)dz=i(\beta-\alpha)k$
+
 ## $class8$
+
 ### 柯西积分定理
+
 闭域$\bar{D}$内闭路$\widetilde{C}$围成单（多）连通区域，$f(z)$在$\bar{D}$内解析，则$\int_{C}f(z)dz=0$
 
 考虑：是闭路？奇点在内？
+
 ### $Newton-Leibniz$ 等式
+
 若$f(z)$在单连通区域$D$内解析$H(z)$是$f(z)$的**任一**原函数，$\forall z_0,z\in D$
 
 $F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
@@ -170,32 +187,44 @@ $F(z)=\int_{z_0}^{z}f(\zeta)d\zeta=H(z)-H(z_0)$
 $Q:how$ $to$ $prove?$
 
 ## $class9$
+
 ### 柯西积分公式
+
 若$f(z)$在闭路$C$及其所谓区域$D$内解析，则$\forall a_0\in D$
 $$\int_{C}\frac{f(z)}{z-a_0}dz=2\pi if(a_0)$$
 注意：$z$前的系数必为1
 
 $prove?$ 连续+长大不等式，难点：构造出$f(z)$
+
 ### 高阶导数积分公式
+
 $\forall a_0\in D，$$f(z)$有任意阶导数！！
 $$\int_{C}\frac{f(z)}{(z-a_0)^n}dz=\frac{2\pi i}{(n-1)!}f^{(n-1)}(a_0)$$
 $prove?$ $definition$+归纳+长大不等式，难点：$k-1\rightarrow k$
+
 ## $class10$
+
 ### 平均值公式（边界决定内部）
+
 $f(z)$在闭圆$|z-a|\leqslant R$内解析
 $$f(z)=\frac{1}{2\pi R}\int_{|z-a|=R}f(\zeta)ds$$
+
 ### 最大模原理
+
 $f(z)$在有界区域$D+C$上解析且不恒等于常数，则$\exist a\in C,s.t.|f(z)|_{max}=|f(a)|$
 
 
 ### 柯西不等式（解析函数导数模的估计）
+
 设$f(z)$在$|z|\leqslant R$上解析，且边界上的最大值为$M(R)$，则有
 $$|f^{(n)}(z)|\leqslant \frac{n!M(R)}{R^n}$$
 
 ### $Liouville$定理
+
 不恒为常数的整函数模无界
 
 ### $ex:$
+
 证明：$f'(a)=\frac{1}{\pi r}\int_0^{2\pi}Re[f(a+re^{i\theta})]e^{-i\theta}d\theta$
 
 难点：运用柯西积分定理+取共轭
@@ -203,12 +232,17 @@ $$|f^{(n)}(z)|\leqslant \frac{n!M(R)}{R^n}$$
 $Tip:$对零点问题用反证+取倒数+最大模原理
 
 $Tip:$对外部解析的问题，构造更大的复闭路
+
 ## $class 11$
+
 ### 调和函数
+
 $\Delta f=0$
 
 定理：$f$解析，其实部和虚部为共轭调和函数
+
 ### 必出考题
+
 已知$u$调和，在$(x_0,y_0)$解析，求$f(z)$
 $$v(x,y)=\int_{(x_0,y_0)}^{(x,y)}\frac{\partial v}{\partial x}dx+\frac{\partial v}{\partial y}dy+\textcolor{red}{C}$$
 
@@ -216,16 +250,25 @@ $$\stackrel{C-R}{\rightarrow}v(x,y)=\int_{(x_0,y_0)}^{(x,y)}-\frac{\partial u}{\
 
 $$v(x,y)=\int_{x_0}^{x}-\frac{\partial u}{\partial y}\textcolor{red}{\bigg|_{y=y_0}}dx+\int_{y_0}^{y}\frac{\partial u}{\partial x}\bigg|_{x=x}dy+\textcolor{red}{C}$$
 $$f(x,y)=u(x,y)+iv(x,y)\stackrel{x=z,y=0}{\longrightarrow}f(z)$$
+
 ### 调和函数性质
+
 $u(z)$只能在$D$的边界$c$上取得$\bar{D}$上的最大值和最小值  
 构造$g(z)=e^{\pm u(z)\pm iv(z)}$，利用最大模原理即可
+
 ## $class12$
+
 ### 调和函数的泊松积分公式
+
 $f(z)$为调和函数，其在圆内任意点的值可以用圆周上的积分表示出来（柯西积分公式+柯西积分定理$z=\frac{R^2}{r}$）
 $$f(z_0+re^{i\varphi})=\frac{1}{2\pi}\int_{0}^{2\pi}\frac{R^2-r^2}{R^2-2rRcos(\theta-\varphi)+r^2}f(z_0+re^{i\varphi})d\theta$$
+
 ### 级数
+
 部分和定义！ 一致收敛的定义！ $Cauchy$收敛准则
+
 #### $\sum_{n=0}^{\infty}z^n$的敛散性：
+
 $|z|<1$时收敛，$\sum_{n=0}^{\infty}z^n=\frac{1}{1-z}$ 但不绝对收敛(?)
 
 $|z|\geqslant1$时发散（逐项不收敛）
@@ -233,16 +276,23 @@ $|z|\geqslant1$时发散（逐项不收敛）
 $|z|\leqslant r,$ $0<r<1$强级数绝对收敛
 
 ## $class13$
+
 ### $Weierstrass$定理
+
 设$f_n(z)$在$D$内解析且$\sum_{n=1}^{+\infty}f_n(z)$在$D$内一致收敛，则$f(z)$在$D$内解析，且$f^{(k)}(z)=\sum_{n=1}^{+\infty}f_n^{(k)}(z),k=1,2,3,...$**这是实函数没有的**
+
 ### $Abel$定理
+
 ### 收敛半径
+
 实系数幂级数$\sum_{n=0}^{+\infty}|a_n|x^n$的收敛半径R是$\sum_{n=1}^{+\infty}a_n(z-a)^n$的收敛半径
 
 $R=\frac{1}{r}$其中$r=\lim\limits_{n\rightarrow+\infty}|\frac{a_{n+1}}{a_n}|$或$r=\lim\limits_{n\rightarrow+\infty}\sqrt[n]{a_n}$
+
 ### $Taylor$展开
+
 设$f(z)$在点$a$解析，以点$a$为半径作圆，直至碰到$f(z)$的奇点
-$$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n$$
+$$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z-a|<R}$$
 
 展开步骤：
 
@@ -252,7 +302,7 @@ $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n$$
 
 3.从$n=0$处展开成幂级数，注意从基本的函数展开开始再运用变量代换
 
-4.在幂级数展开后写出收敛半径
+4.在幂级数展开后**写出收敛半径**
 
 一些注意的问题：
 
@@ -262,17 +312,92 @@ $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n$$
 
 3.展开到第$n$项指展开到$z^{n-1}$
 
+## $class14$
 
+### 零点
 
+$z_0$为$f(z)$的$m$级零点$\iff f(z_0)=...=f^{(m-1)}(z_0)=0,f^{(m)}(z_0)\neq0\iff f(z)=(z-z_0)^mg(z),g(z)$在$z_0$解析
 
+单零点：1级零点
 
+### $Laurent$级数
 
+$f(z)$在圆环域$D:r<|z-a|<R$中解析，则$f(z)$一定能在这个圆环中展开成罗朗级数，即$f(z)=\sum_{n=-\infty}^{+\infty}a_n(z-a)^n$
 
+## $class15$
 
+### 奇点
 
+$$\cdot\begin{cases}
+可去奇点：1.无主要部分，\exist\rho>0,f(z)在0<|z-a|<\rho内有界；2.\lim\limits_{z\rightarrow a}f(z)=a_0 \\
+极点：1.f(z)=\frac{\varphi(z)}{(z-a)^m}且\varphi(a)\neq0\rightarrow a是m级极点；2.a是函数g(z)=\frac{1}{f(z)}的m级零点；3.\lim\limits_{z\rightarrow a}f(z)=+\infty\\
+本性奇点：1.m=+\infty；2.\lim\limits_{z\rightarrow a}f(z)不存在\\
+\end{cases}$$
 
+#### 无穷奇点
 
+做代换$\varphi(\zeta)=f(\frac{1}{\zeta})$再讨论，此时积分区间变化
 
+## $class16$
 
+### 留数定理
 
+设$a$是$f(z)$的孤立奇点，$C$是$a\textcolor{red}{充分小邻域内}$一条把$a$点包含在其内部的闭路，定义留数（残数）为：
+$$Res[f(z),a]=\frac{1}{2\pi i}\int_Cf(z)dz$$
 
+$$\cdot
+\begin{cases}
+Res[f(z),a]=a_{-1}  & \text{a为本性奇点\&else}\\
+Res[f(z),a]=\frac{1}{(m-1)!}\lim\limits_{z\rightarrow a}\frac{d^{m-1}}{dz^{m-1}}[(z-a)^mf(z)]  & \text{a为m级极点}\\
+Res[\frac{P(z)}{Q(z)},a]=\frac{P(a)}{Q'(a)} & \text{a为1级极点\textcolor{red}{（只适用于1级）}}
+\end{cases}$$
+
+## $class17、18$
+
+### 积分计算
+
+$$\int_Cf(z)dz=2\pi iRes[f(z),a]$$
+
+$C$内含有本性奇点用留数较为麻烦：$e.g.\ \int_{|z|=7}\frac{cos\frac{1}{z-2}}{6-z}dz\quad$
+
+简单办法：寻找$|z|=7$所处的解析范围，在本性奇点$z=2$处展开为罗朗级数，则$\int_{|z|=7}\frac{cos\frac{1}{z-2}}{6-z}dz=2\pi a_{-1}$
+
+### 计算实积分
+
+$$1.\int_{0(-\pi)}^{2\pi(\pi)}R(cos\theta,sin\theta)d\theta=2\pi i\sum_{k=1}^{n}Res[R(z),a_k]\qquad a_k为所有奇点$$
+
+令$z=e^{i\theta}\quad d\theta=\frac{1}{iz}dz\quad cos\theta=\frac{1}{2}(z+\frac{1}{z})=Re\ e^{i\theta}\quad sin\theta=\frac{1}{2}(z-\frac{1}{z})=Im\ e^{i\theta}\quad 路径\rightarrow|z|=1(逆)$
+
+必备技巧：奇偶性、变量代换
+
+$$2.\int_{-\infty}^{+\infty}\frac{P(x)}{Q(x)}dx=2\pi i\sum_{k=1}^{n}Res[\frac{P(z)}{Q(z)},a_k]$$
+
+证明用到：大圆弧定理
+
+条件：$Q(x)$的次数高$P(x)2$次及以上，$Q(x)$在$x$轴上无零点，$a_k$为上半平面所有奇点
+
+$$3.\int_{\textcolor{red}{-\infty}}^{+\infty}\frac{P(x)}{Q(x)}cosmxdx=\textcolor{red}{Re}\{2\pi i\sum_{k=1}^{n}Res[\frac{P(z)}{Q(z)}\textcolor{red}{e^{imz}},a_k]+\textcolor{red}{\pi i}\sum_{k=1}^{l}Res[\frac{P(z)}{Q(z)}\textcolor{red}{e^{imz}},x_k]\}$$
+
+$$\int_{\textcolor{red}{-\infty}}^{+\infty}\frac{P(x)}{Q(x)}sinmxdx=\textcolor{red}{Im}\{2\pi i\sum_{k=1}^{n}Res[\frac{P(z)}{Q(z)}\textcolor{red}{e^{imz}},a_k]+\textcolor{red}{\pi i}\sum_{k=1}^{l}Res[\frac{P(z)}{Q(z)}\textcolor{red}{e^{imz}},x_k]\}$$
+
+证明用到：小圆弧定理+约当定理
+
+条件：$Q(x)$的次数高$P(x)1$次及以上，$Q(x)$在$x$轴上有$l$个一级零点$x_k$，$a_k$为$\textcolor{red}{上半平面}$所有奇点，$\textcolor{red}{m>0}$
+
+## $class19$
+lemma：
+
+设$a,b$分别是$f(z)$的$m$级零点和$n$级极点，则$a,b$都是$\frac{f'(z)}{f(z)}$的一级极点，且
+$$Res[\frac{f'(z)}{f(z)},a]=m,\quad Res[\frac{f'(z)}{f(z)},b]=-n$$
+$prove:f(z)=(z-a)^m\varphi(z)...$
+
+### 辐角原理
+
+$$N-P=\frac{1}{2\pi}\Delta_Cargf(z)$$
+$N=\sum C$内部的零点级数，$P=\sum C$内部的极点级数
+
+### 儒歇定理
+
+设函数$f(z)$及$\varphi(z)$在闭路$C$及其内部解析，且在$C$上有不等式$|f(z)|>|\varphi(z)|$，则在$C$内部$f(z)+\varphi(z)$和$f(z)$的零点个数相等
+
+说明了和函数零点的个数取决于模较大函数在$C$中的零点个数
