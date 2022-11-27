@@ -1,6 +1,11 @@
 <font size=2>
 
 # 光学重点
+
+[TOC]
+
+
+
 ## $class1$
 #### 几何光学三定律
 1. 直线传播定律：在均匀介质中光沿**直线**传播
@@ -66,9 +71,7 @@ $$\frac{1}{s}+\frac{1}{s'}=\frac{1}{f_{1}}+\frac{1}{f_{2}}$$
 
 系统间隔：$d=|H_i'H_{i+1}|$
 
-$X_{H}=|H_1H|$
-
-$X_{H'}=|H_nH|$
+$X_{H}=|H_1H|\quad X_{H'}=|H_nH|$
 
 $\Rightarrow f'=-\frac{f_1'f_2'}{\Delta},X_H'=\frac{df_2'}{\Delta}$
 
@@ -219,8 +222,11 @@ $$\Delta x=\frac{D}{d}\lambda$$
 #### 光强衬比度
 
 $$\gamma=\frac{2A_1A_2}{A_1^2+A_2^2}$$
+则干涉公式变为：
+$$I=I_0(1+\gamma cos\delta)$$
+其中$I_0=I_1+I_2=A_1^2+A_2^2$
 
-#### 平行光干涉场
+#### 两束平行光的干涉
 
 沿$x,y$方向的条纹间距为
 $$\begin{cases}
@@ -232,6 +238,7 @@ $$\begin{cases}
 f_x=\frac{1}{\Delta x}\\
 f_y=\frac{1}{\Delta y}\\
 \end{cases}$$
+
 #### 光源宽度与干涉条纹的关系
 
 $$\begin{cases}
@@ -282,7 +289,7 @@ $$\Delta \lambda=\frac{\lambda^2}{2\pi nhcosi}\frac{1-R}{\sqrt{R}}$$
 
 矢量图解$P151.5$
 
-半波带半径
+#### 半波带半径
 $$\rho_k=\sqrt{\frac{Rb}{R+b}k\lambda}\qquad (k=1,2,...)$$
 
 转化成透镜公式：
@@ -298,7 +305,7 @@ $$\frac{1}{R}+\frac{1}{b}=\frac{k\lambda}{\rho_k^2}\qquad \text{即}f=\frac{\rho
 $$I_\theta=I_0(\frac{sin\alpha}{\alpha})^2$$
 其中$\alpha=\frac{\pi a}{\lambda}(sin\theta\pm sin\theta_0),\frac{sin\alpha}{\alpha}$为单缝衍射因子，$\theta_0$为入射光与单缝所在平面法线的夹角
 
-半角宽度
+半角宽度：
 $$\Delta\theta=\frac{\lambda}{acos\theta_0}$$
 应用：由巴比涅定律，细丝所呈衍射图像与单缝所呈图像完全一致，可以用来测细丝直径
 
@@ -321,6 +328,81 @@ $\delta\theta_e\approx1'=2.9\times10^{-4}rad$
 </font>
 
 ### 多缝夫琅禾费衍射
+
 相关参数：光栅常数$d=a+b$，光栅有效长度$L=Nd$
 $$I_\theta=a_0^2(\frac{sin\alpha}{\alpha})^2(\frac{sinN\beta}{sin\beta})^2\qquad \alpha=\frac{\pi a}{\lambda}sin\theta\quad\beta=\frac{\pi d}{\lambda}sin\theta$$
 分析思路：矢量图解法（区别：衍射时$R\propto A_0$，干涉时$R\propto a_\theta$），单缝衍射因子和缝间干涉因子相乘实现相位调制，出现缺级
+
+## $class20$
+
+### 光栅分光
+
+对于一定波长差$\delta\lambda$的两条谱线的角间隔？由光栅方程$dsin\theta_k=k\lambda$，取微分得到$\delta\theta=\frac{k\delta\lambda}{dcos\theta_k}$
+
+$k$级条纹的角宽度：$\frac{\pi d}{\lambda}sin\theta_k=k\pi\qquad\frac{\pi d}{\lambda}sin(\theta_k+\Delta\theta)=(k+\frac{1}{N})\pi\quad\rightarrow\Delta\theta=\frac{\lambda}{Ndcos\theta_k}$
+
+由瑞利判据$\delta\theta=\Delta\theta$得最小分辨波长$\delta\lambda=\frac{\lambda}{kN}$
+
+### 闪耀光栅
+
+由于$\alpha$中$\theta$是光线与狭缝法线的夹角，$\beta$中$\theta$则是与整个光栅平面法线夹角，传统的光栅$\theta$相同，衍射的零级主极大与干涉的零级主极大重合，导致大部分能量和信息都集中于光栅中央
+
+## $class21$
+
+### 屏函数
+
+凡使波前上的复振幅发生改变的物都称为衍射屏，都具有屏函数：
+$$\widetilde{t}(x,y)=\frac{\widetilde{U_2}(x,y)}{\widetilde{U_1}(x,y)}$$
+
+![相因子1](D:\VScode文件\markdown\相因子1.png)
+
+![相因子2](D:\VScode文件\markdown\相因子2.png)
+
+透镜的相位变换函数：
+$$\widetilde{t_L}(x,y)=exp[-ik\frac{x^2+y^2}{2f}]$$
+
+棱镜的相位变换函数：
+$$\widetilde{t_P}(x,y)=exp[-ik(n-1)\alpha x]$$
+
+正弦光栅的相位变换函数：
+$$\widetilde{t}(x,y)=t_0+t_1cos(q_xx+q_yy+\varphi_0)$$
+$q=2\pi f$为空间圆频率
+
+### 正弦光栅的制备
+
+两束平行光干涉的光强为：$I=I_0[1+\gamma cos(q_xx+q_yy+\varphi_0)]$
+
+经过线性冲洗：$\widetilde{t}(x,y)=t_0+\beta I(x,y)$得到正弦光栅
+
+由欧拉公式可知平行光通过正弦光栅后分为三列平面波,对照平面波的复振幅和复振幅$\widetilde{U_2}$得到 $2\pi fx=kx\rightarrow sin\theta_{\pm1}=\pm f\lambda$
+
+### 屏函数傅里叶展开
+
+任何复杂衍射屏的屏函数都可以展开成一系列简单屏函数的和
+
+## $class22$
+
+### 空间滤波
+
+凸透镜本身就是一个低通滤波器，物平面在前焦面附近时截止频率为
+$$sin\theta=f\lambda\qquad f_M=\frac{D}{2F\lambda}$$
+
+## $class23$
+
+### 全息$Halo$
+
+无源空间中的光场分布由边界条件（波前）唯一确定$I=(\widetilde U_o+\widetilde U_R)(\widetilde U_o^*+\widetilde U_R^*)$
+
+利用线性冲洗得到屏函数$\widetilde{t}(x,y)=t_0+\beta I(x,y)$
+
+最后用与参考光$R$频率、角度相同的光源$R'$照明得到全息图像$\widetilde{U}=\widetilde{U}_{R'}\widetilde{t}(x,y)$
+
+### 双折射
+
+$o$光：满足折射定律；$e$光：一般不满足折射定律
+
+主截面
+
+主平面
+
+入射面

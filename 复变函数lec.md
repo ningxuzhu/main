@@ -1,6 +1,11 @@
 <font size=2>
 
 # 复变函数重点
+
+[TOC]
+
+
+
 ## $class1$
 ### 辐角主值的计算：
 $$arg(x+iy)=
@@ -241,9 +246,9 @@ $\Delta f=0$
 
 定理：$f$解析，其实部和虚部为共轭调和函数
 
-### 必出考题
+### 必考题
 
-已知$u$调和，在$(x_0,y_0)$解析，求$f(z)$
+已知$u$在单连通区域$D$内调和，求$D$内的解析函数$f(z)$
 $$v(x,y)=\int_{(x_0,y_0)}^{(x,y)}\frac{\partial v}{\partial x}dx+\frac{\partial v}{\partial y}dy+\textcolor{red}{C}$$
 
 $$\stackrel{C-R}{\rightarrow}v(x,y)=\int_{(x_0,y_0)}^{(x,y)}-\frac{\partial u}{\partial y}dx+\frac{\partial u}{\partial x}dy+\textcolor{red}{C}$$
@@ -251,10 +256,11 @@ $$\stackrel{C-R}{\rightarrow}v(x,y)=\int_{(x_0,y_0)}^{(x,y)}-\frac{\partial u}{\
 $$v(x,y)=\int_{x_0}^{x}-\frac{\partial u}{\partial y}\textcolor{red}{\bigg|_{y=y_0}}dx+\int_{y_0}^{y}\frac{\partial u}{\partial x}\bigg|_{x=x}dy+\textcolor{red}{C}$$
 $$f(x,y)=u(x,y)+iv(x,y)\stackrel{x=z,y=0}{\longrightarrow}f(z)$$
 
+其中$C$是任意$\textcolor{red}{实}$常数
+
 ### 调和函数性质
 
-$u(z)$只能在$D$的边界$c$上取得$\bar{D}$上的最大值和最小值  
-构造$g(z)=e^{\pm u(z)\pm iv(z)}$，利用最大模原理即可
+$u(z)$只能在$D$的边界$c$上取得$\bar{D}$上的最大值和最小值，构造$g(z)=e^{\pm u(z)\pm iv(z)}$，利用最大模原理即可
 
 ## $class12$
 
@@ -289,7 +295,7 @@ $|z|\leqslant r,$ $0<r<1$强级数绝对收敛
 
 $R=\frac{1}{r}$其中$r=\lim\limits_{n\rightarrow+\infty}|\frac{a_{n+1}}{a_n}|$或$r=\lim\limits_{n\rightarrow+\infty}\sqrt[n]{a_n}$
 
-### $Taylor$展开
+### $Taylor$展开（必考）
 
 设$f(z)$在点$a$解析，以点$a$为半径作圆，直至碰到$f(z)$的奇点
 $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z-a|<R}$$
@@ -298,7 +304,7 @@ $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z
 
 1.求奇点
 
-2.求收敛半径$R=|展开点-距离最近的奇点|$
+2.求收敛半径$R=$|展开点-距离最近的奇点|
 
 3.从$n=0$处展开成幂级数，注意从基本的函数展开开始再运用变量代换
 
@@ -311,6 +317,8 @@ $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z
 2.不好展开的函数/**级数乘级数**考虑求导/积分函数是否比较好展开
 
 3.展开到第$n$项指展开到$z^{n-1}$
+
+4.$n+1/n-1$要换成$n$
 
 ## $class14$
 
@@ -342,7 +350,7 @@ $$\cdot\begin{cases}
 
 ### 留数定理
 
-设$a$是$f(z)$的孤立奇点，$C$是$a\textcolor{red}{充分小邻域内}$一条把$a$点包含在其内部的闭路，定义留数（残数）为：
+>设$a$是$f(z)$的孤立奇点，$C$是$a\textcolor{red}{充分小邻域内}$一条把$a$点包含在其内部的闭路，定义留数（残数）为：
 $$Res[f(z),a]=\frac{1}{2\pi i}\int_Cf(z)dz$$
 
 $$\cdot
@@ -385,9 +393,7 @@ $$\int_{\textcolor{red}{-\infty}}^{+\infty}\frac{P(x)}{Q(x)}sinmxdx=\textcolor{r
 条件：$Q(x)$的次数高$P(x)1$次及以上，$Q(x)$在$x$轴上有$l$个一级零点$x_k$，$a_k$为$\textcolor{red}{上半平面}$所有奇点，$\textcolor{red}{m>0}$
 
 ## $class19$
-lemma：
-
-设$a,b$分别是$f(z)$的$m$级零点和$n$级极点，则$a,b$都是$\frac{f'(z)}{f(z)}$的一级极点，且
+$lemma$：设$a,b$分别是$f(z)$的$m$级零点和$n$级极点，则$a,b$都是$\frac{f'(z)}{f(z)}$的一级极点，且
 $$Res[\frac{f'(z)}{f(z)},a]=m,\quad Res[\frac{f'(z)}{f(z)},b]=-n$$
 $prove:f(z)=(z-a)^m\varphi(z)...$
 
@@ -396,8 +402,56 @@ $prove:f(z)=(z-a)^m\varphi(z)...$
 $$N-P=\frac{1}{2\pi}\Delta_Cargf(z)$$
 $N=\sum C$内部的零点级数，$P=\sum C$内部的极点级数
 
-### 儒歇定理
+### 儒歇定理（必考）
 
-设函数$f(z)$及$\varphi(z)$在闭路$C$及其内部解析，且在$C$上有不等式$|f(z)|>|\varphi(z)|$，则在$C$内部$f(z)+\varphi(z)$和$f(z)$的零点个数相等
+设函数$f(z)$及$\varphi(z)$在闭路$C$及其内部解析，且在$C$上有不等式$|f(z)|>|\varphi(z)|$，则在$C$内部$f(z)+\varphi(z)$和$f(z)$的零点个数相等（和函数零点的个数取决于模较大函数在$C$中的零点个数）
 
-说明了和函数零点的个数取决于模较大函数在$C$中的零点个数
+圆环情形：$e.g. \quad r_1<|z|<r_2$考虑$|Z|<r_1$内$N_{内圆}$；说明$|z|=r_1$上无零点；考虑$|Z|<r_2$内$N_{外圆}$；则$N=N_{外圆}-N_{内圆}$
+
+## $class20$
+
+### 唯一性定理
+
+$f(z),g(z)$在区域$D$**内**解析，若$f(z),g(z)$在互不相同的点列$\alpha_1,\alpha_2,...,\alpha_k,...$上的值相等且$\lim\limits_{k\rightarrow\infty}=a$（$a$必须在$D$内），则$f(z)\equiv g(z)\quad z\in D.$
+
+### 零点问题
+
+证明无零点用最大模原理（边界不要求解析）；证明有零点用儒歇定理$f(z_0)=z_0...$（边界必须解析）；证明恒为零用唯一性定理
+
+## $class21$
+
+### 导数的几何意义
+
+> 设$w=f(z)$在$D$内解析，$z_0\in D,w_0=f(z_0),\textcolor{red}{f'(z_0)\neq0}$，设$C:z(t)=x(t)+iy(t)$是$D$内过$z_0$的简单光滑曲线，$f(z)$将$C$映成$w$平面过$w_0$的曲线$C_1$
+>
+
+有：
+$$w'(t)=f'(z(t))z'(t)$$
+$$arg[w'(t_0)]=arg[f'(z_0)]+arg[z'(t_0)]$$
+$$arg[f'(z_0)]=arg[w'(t_0)]-arg[z'(t_0)]$$
+又有：
+$$|f'(z_0)|=\lim\limits_{\Delta z\rightarrow 0}\frac{|\Delta w|}{|\Delta z|}$$
+综上：$arg[f'(z_0)]$为旋转角，$|f'(z_0)|$为伸张系数，只与$z_0$有关
+
+## $class22$
+
+### 保形变换
+
+区域$D$内**单叶函数**所确定的变换为保形变换（$f'(z)\neq0$）
+
+### 黎曼定理
+
+如果$D$是闭复平面上一个边界至少包含**两个点**（$\infty$可以看作一点）的**单连通**区域，则必存在单叶函数$w=f(z)$把$D$变为单位圆内部$D_1$.
+
+### 分式线性变换$w=\frac{az+b}{cz+d},\quad ad-bc\neq0$
+
+规定：$w(-\frac{d}{c})=+\infty,w(\infty)=\frac{a}{c}$，满足黎曼定理
+$$w=\frac{az+b}{cz+d}=\overbrace{\frac{a}{c}}^{T}+\overbrace{|\frac{b}{c}-\frac{ad}{c^2}|}^{S}\overbrace{exp\{iarg(\frac{b}{c}-\frac{ad}{c^2})\}}^{R}\overbrace{\frac{1}{z+\frac{d}{c}}}^{I}$$
+
+## $class23$
+
+### 寻找分式变换
+
+定义：$z_1,z_2$关于有限圆周$|z-z_0|=R$的对称点：$|z_1-z_0||z_2-z_0|=R^2$
+
+$$\frac{w-w_1}{w-w_2}\cdot\frac{w_3-w_2}{w_3-w_1}=\frac{z-z_1}{z-z_2}\cdot\frac{z_3-z_2}{z_3-z_1}$$
