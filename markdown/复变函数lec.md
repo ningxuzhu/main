@@ -1,10 +1,4 @@
-<font size=2>
-
 # 复变函数重点
-
-[TOC]
-
-
 
 ## $chapter$ 1
 
@@ -17,7 +11,7 @@ arctan \frac{y}{x}+\pi &\text{第二象限} \\
 arctan \frac{y}{x}-\pi &\text{第三象限} \\
 \end{cases}$$ 
 
-### $Tips$：
+### $tips$：
 
 1.**$arg\in(-\pi,\pi]$**
 
@@ -118,7 +112,7 @@ $z$的单叶性区域(平面角域)为：$0<|z|<+\infty, \frac{(2k-1)\pi}{n}<arg
 
 #### 辐角变化
 
-$z$平面上存在一条起点为$a$，终点为$b$的连续曲线。选定$arga\Rightarrow argb$被确定$\Delta_{l}argz=argb-arga$
+$z$平面上存在一条起点为$a$，终点为$b$的连续曲线.选定$arga\Rightarrow argb$被确定$\Delta_{l}argz=argb-arga$
 
 $$l是连续闭曲线
 \begin{cases}
@@ -134,7 +128,7 @@ $ps$：考虑$\Delta_{l}argz$是否引起$f(z)$的任何变化
 
 $z=0,z=\infty$是$w=\sqrt[n]{z}$的唯一两个支点
 
-$w=\sqrt{z^2-1},w=\sqrt[4]{\frac{z(1-z)^{3}}{(z+i)^{4}}}$的支点？Arg（z-1）围绕z=1转动
+$w=\sqrt{z^2-1},w=\sqrt[4]{\frac{z(1-z)^{3}}{(z+i)^{4}}}$的支点？$Arg(z-1)$围绕$z=1$转动
 
 #### 支割线
 
@@ -146,14 +140,17 @@ $w=\sqrt{z^2-1},w=\sqrt[4]{\frac{z(1-z)^{3}}{(z+i)^{4}}}$的支点？Arg（z-1�
 第$k$支的表达式为$w_{k}=\sqrt[n]{r}exp(i\frac{argz+2k\pi}{n}),k=0,1,2,...,n-1$
 
 $w_{k}$把割开了的$z$平面$(2k-1)\pi<argz<(2k+1)\pi$映为角域$D_{k},\frac{(2k-1)\pi}{n}<argw<\frac{(2k+1)\pi}{n}$
-| 初等函数   | 具体表达式                                                   | 保形变换                                                  | 杂项                                                         |
-| ---------- | ------------------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ |
-| 指数函数   | $w=e^z$                                                      | $Arge^{z}=Imz+2k\pi$                                      |                                                              |
-| 对数函数   | $w=Lnz$                                                      | $-\pi<argz<\pi$$\Rightarrow(2k-1)\pi<Imw_{k}<(2k-1)\pi\\$ | $Lnz=ln|z|+iArg(z)$                                          |
-| 三角函数   | $w=\begin{cases}sinz=\frac{e^{iz}-e^{-iz}}{2\textbf{i}}\\cosz=\frac{e^{iz}+e^{-iz}}{2} \end{cases}$ |                                                           | $sinz,cosz$无界$|sinz|=\sqrt{cos^2hy-cos^2x}$                |
-| 双曲函数   | $w=\begin{cases}sinz=\frac{e^{z}-e^{-z}}{2}\\cosz=\frac{e^{z}+e^{-z}}{2} \end{cases}$ |                                                           | $cosh(a+b)=coshacoshb+sinhasinhb$$sinh(a+b)=sinhacoshb+coshasinhb$ |
-| 反三角函数 | $w=\begin{cases}Arcsinz\\Arccosz\end{cases}$                 |                                                           | 解法：两边取三角函数，令$e^{iz}=\beta$，求解关于$\beta$的一元二次方程，最后两边取$Ln$ |
-| 一般幂函数 | $w=z^\alpha=e^{\alpha  Lnz}$                                 |                                                           |                                                              |
+
+### 其他初等函数
+
+| 初等函数   | 具体表达式                                                   | 保形变换                                                | 杂项                                                         |
+| ---------- | ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------ |
+| 指数函数   | $w=e^z$                                                      | $a<Imz<b\quad b-a\le2\pi\\\Rightarrow a<Argw<b$         | $Arge^{z}=Imz+2k\pi$                                         |
+| 对数函数   | $w=Lnz$                                                      | $-\pi<argz<\pi\\\Rightarrow(2k-1)\pi<Imw_{k}<(2k-1)\pi$ | $Lnz=ln|z|+iArgz\\Ln\overline z=\overline{Lnz}$              |
+| 三角函数   | $w=\begin{cases}sinz=\frac{e^{iz}-e^{-iz}}{2\textbf{i}}\\cosz=\frac{e^{iz}+e^{-iz}}{2} \end{cases}$ |                                                         | $sinz,cosz无界\\|sinz|=\sqrt{cos^2hy-cos^2x}\\sin(iz)=isinhz\\cos(iz)=coshz$ |
+| 双曲函数   | $w=\begin{cases}sinz=\frac{e^{z}-e^{-z}}{2}\\cosz=\frac{e^{z}+e^{-z}}{2} \end{cases}$ |                                                         | $cosh(a+b)=coshacoshb+sinhasinhb$$sinh(a+b)=sinhacoshb+coshasinhb$ |
+| 反三角函数 | $w=\begin{cases}Arcsinz\\Arccosz\end{cases}$                 |                                                         | 解法：两边取三角函数，令$e^{iz}=\beta$，求解关于$\beta$的一元二次方程，最后两边取$Ln$ |
+| 一般幂函数 | $w=z^\alpha=e^{\alpha  Lnz}$                                 |                                                         |                                                              |
 
 ## $chapter$ 3
 
@@ -312,7 +309,7 @@ $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z
 
 3.从$n=0$处展开成幂级数，注意从基本的函数展开开始再运用变量代换
 
-4.在幂级数展开后**写出收敛半径**
+4.在幂级数展开后写出**收敛半径**
 
 #### $tips:$
 
@@ -334,10 +331,14 @@ $z_0$为$f(z)$的$m$级零点$\iff f(z_0)=...=f^{(m-1)}(z_0)=0,f^{(m)}(z_0)\neq0
 
 $f(z)$在圆环域$D:r<|z-a|<R$中解析，则$f(z)$一定能在这个圆环中展开成罗朗级数，即$f(z)=\sum_{n=-\infty}^{+\infty}a_n(z-a)^n$
 
+#### $tips:$
+
+有理分式先分解，当遇到有理真分式为二阶时考虑求导
+
 ### 奇点
 
 $$\cdot\begin{cases}
-可去奇点：1.无主要部分，\exist\rho>0,f(z)在0<|z-a|<\rho内有界；2.\lim\limits_{z\rightarrow a}f(z)=a_0 \\
+可去奇点：1.无主要部分，\exist\rho>0,f(z)在0<|z-a|<\rho内有界；2.\lim\limits_{z\rightarrow a}f(z)=a_0\quad P101例17 \\
 极点：1.f(z)=\frac{\varphi(z)}{(z-a)^m}且\varphi(a)\neq0\rightarrow a是m级极点；2.a是函数g(z)=\frac{1}{f(z)}的m级零点；3.\lim\limits_{z\rightarrow a}f(z)=+\infty\\
 本性奇点：1.m=+\infty；2.\lim\limits_{z\rightarrow a}f(z)不存在\\
 \end{cases}$$
@@ -346,7 +347,7 @@ $$\cdot\begin{cases}
 
 做代换$\varphi(\zeta)=f(\frac{1}{\zeta})$再讨论，此时积分区间变化
 
-### $ex:$
+#### $tips:$
 
 $1=e^{i\theta}e^{-i\theta}$的运用$P104.6$
 
@@ -368,9 +369,7 @@ Res[\frac{P(z)}{Q(z)},a]=\frac{P(a)}{Q'(a)} & \text{a为1级极点\textcolor{red
 
 $$\int_Cf(z)dz=2\pi iRes[f(z),a]$$
 
-$C$内含有本性奇点用留数较为麻烦：$e.g.\ \int_{|z|=7}\frac{cos\frac{1}{z-2}}{6-z}dz\quad$
-
-简单办法：寻找$|z|=7$所处的解析范围，在本性奇点$z=2$处展开为罗朗级数，则$\int_{|z|=7}\frac{cos\frac{1}{z-2}}{6-z}dz=2\pi a_{-1}$
+$C$内含有两个奇点（且其中一个为本性奇点），*分开计算*留数较为麻烦：$e.g.\ \int_{|z|=7}\frac{cos\frac{1}{z-2}}{6-z}dz\quad$，可以把$P92$定理$17$反用，只求一次罗朗级数：寻找$|z|=7$所处的解析范围，在$z-2>4$内展开为罗朗级数，则$\int_{|z|=7}\frac{cos\frac{1}{z-2}}{6-z}dz=2\pi a_{-1}$
 
 ### 计算实积分
 
@@ -408,12 +407,13 @@ $$\int_{\textcolor{red}{-\infty}}^{+\infty}\frac{P(x)}{Q(x)}sinmxdx=\textcolor{r
 
 ### 幅角原理
 
-> $lemma$：设$a,b$分别是$f(z)$的$m$级零点和$n$级极点，则$a,b$都是$\frac{f'(z)}{f(z)}$的一级极点，且
+> $lemma1$：设$a,b$分别是$f(z)$的$m$级零点和$n$级极点，则$a,b$都是$\frac{f'(z)}{f(z)}$的一级极点，且
 > $$Res[\frac{f'(z)}{f(z)},a]=m,\quad Res[\frac{f'(z)}{f(z)},b]=-n$$
 > $prove:f(z)=(z-a)^m\varphi(z)...$
 
-$$N-P=\frac{1}{2\pi}\Delta_Cargf(z)$$
-$N=\sum C$内部的零点级数，$P=\sum C$内部的极点级数
+$$\int_C\frac{f'(z)}{f(z)}dz=2\pi i(N-P)$$，可以用来求解分子是分母一阶导的积分
+
+$$\Delta_Cargf(z)=2\pi(N-P)$$，$N=\sum C$内部的零点**级数**，$P=\sum C$内部的极点**级数**
 
 ### 儒歇定理（必考）
 
@@ -466,30 +466,30 @@ $$w=\frac{az+b}{cz+d}=\overbrace{\frac{a}{c}}^{T}+\overbrace{|\frac{b}{c}-\frac{
 - 任给$z$平面上三个不同点$z_1,z_2,z_3$和$w$平面上三个不同点$w_1,w_2,w_3$，存在一个唯一的分式线性变换把$z_1,z_2,z_3$分别变成$w_1,w_2,w_3$
 
 
-$$\frac{w-w_1}{w-w_2}\cdot\frac{w_3-w_2}{w_3-w_1}=\frac{z-z_1}{z-z_2}\cdot\frac{z_3-z_2}{z_3-z_1}$$
+  $$\frac{w-w_1}{w-w_2}\cdot\frac{w_3-w_2}{w_3-w_1}=\frac{z-z_1}{z-z_2}\cdot\frac{z_3-z_2}{z_3-z_1}$$
 
 - 若给定两个条件$w(z_1)=w_1,w(z_2)=w_2$（一般为两个对称点）则变换可以表示为
 
 
-$$\frac{w-w_1}{w-w_2}=k\frac{z-z_1}{z-z_2}$$
-
-$k$为任意复常数，一般由边界对应边界的关系确定
+  $$\frac{w-w_1}{w-w_2}=k\frac{z-z_1}{z-z_2}$$，$k$为任意复常数，一般由边界对应边界的关系确定
 
 定义：$z_1,z_2$关于有限圆周$|z-z_0|=R$的对称点：$|z_1-z_0||z_2-z_0|=R^2$，圆心对应无穷
 
 ### 几种常见的保形变换
 
-- 上半平面$\rightarrow$单位圆
+- 上半平面$\rightarrow$单位圆，把$z_0$变为圆的圆心
 
   $w=e^{i\theta}\frac{z-z_0}{z-\bar{z_0}}$
 
-- 单位圆$\rightarrow$单位圆
+- 单位圆$\rightarrow$单位圆，把$z_0$变为第二个圆的圆心
 
   $w=e^{i\theta}\frac{z-z_0}{1-z\bar{z_0}}$
 
 - 二角形$\rightarrow$上半平面
 
   $\varphi_1=\frac{z-顶点1}{z-顶点2}$
+  
+  将（原像）条形域变成角域用指数函数$e^z$，将（原像）角域变成条形域用对数函数主值$lnz$
 
 
 ## $chapter$ 9
@@ -536,14 +536,33 @@ $$L^{-1}[F(p+\mu)]=e^{-\mu t}L^{-1}[F(p)]$$
 
 $$L[f(t-\tau)h(t-\tau)]=e^{-\tau p}L[f(t)]$$
 
+$$L^{-1}e^{-p\tau}L[f(t)]=f(t-\tau)h(t-\tau)$$
+
 #### 卷积定理
 
 $$L[f_1*f_2]=L[f_1]L[f_2]$$
 
 $$L^{-1}[F_1(p)F_2(p)]=L^{-1}[F_1(p)]*L^{-1}[F_2(p)]$$
 
+#### $Fourier-Mellin$公式
+
+$$f(t)=h(t)\{\sum_{k=1}^nRes[F(p)e^{pt},p_k]\}\quad t>0$$
+
+或者$f(t)=h(t)\{F(p)e^{pt}在实轴所有奇点留数和+2Re(F(p)e^{pt}在上半平面所有奇点留数和)\}$
+
 #### $tips:$
 
 - 分母不能因式分解$\rightarrow$配方$\rightarrow$位移定理
 
-- $\frac{1}{(p-2)^2(p^2+3)}=\frac{A}{p-2}+\frac{B}{p-2}^2+\frac{Cp+D}{p^2+3}$保留$A,B,C,D$直到最后再代入数值
+- $\frac{1}{(p-a)^2(p^2+b)}=\frac{A}{p-a}+\frac{B}{(p-a)^2}(几次几项)+\frac{Cp+D}{p^2+b}$保留$A=-\frac{2a}{2a^2b+b^2+a^4},B=\frac{a^2+b}{2a^2b+b^2+a^4},C=\frac{2a}{2a^2b+b^2+a^4},D=\frac{a^2-b}{2a^2b+b^2+a^4}$直到最后再代入数值
+
+- 积化和差
+
+- 求导
+
+------
+
+
+
+[复变函数（第二版）严镇军]: 
+

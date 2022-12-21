@@ -1,5 +1,3 @@
-<font size=2>
-
 # 光学重点
 
 [TOC]
@@ -7,7 +5,7 @@
 
 
 ## 几何光学
-#### 几何光学三定律
+### 几何光学三定律
 1. 直线传播定律：在均匀介质中光沿**直线**传播
 
 2. **独立**传播定律：不同方向的光线相交，不影响每一光线的传播
@@ -19,6 +17,7 @@ $$nsin\theta_{i}=n'sin\theta_{i}'$$
 #### 棱镜最小偏向角
 $$n=\frac{sin\frac{\delta_{m}+\alpha}{2}}{sin\frac{\alpha}{2}}n_{0}$$
 （其中$\alpha$为棱镜顶角）
+
 #### 费马原理
 $$\delta\int_Q^Pndl=0$$
 #### 共轭点
@@ -59,27 +58,26 @@ $$V=-\frac{ns'}{n's}=-\frac{fs'}{f's}=-\frac{x'}{f'}=-\frac{f}{x}$$
 $$\frac{1}{s}+\frac{1}{s'}=\frac{1}{f_{1}}+\frac{1}{f_{2}}$$
 ### 作图法（三条重要光线）
 需要熟练掌握凹透镜作图
-#### 主点&主面
+#### 主点和主面
 主面：过主点做垂直于光轴的平面，是横向放大率为1的一对共轭面
-## $class7$
-光学间隔：$\Delta=|F_i'F_{i+1}|(\Delta>0$发散；$\Delta<0$会聚；$\Delta=0$无焦$)$
 
-系统间隔：$d=|H_i'H_{i+1}|$
+#### 基点和基平面
 
-$X_{H}=|H_1H|\quad X_{H'}=|H_nH|$
+考虑两个理想光具组的联合基点为图中$H'$，由相似关系和$Gauss$公式即可推得下列公式
 
-$\Rightarrow f'=-\frac{f_1'f_2'}{\Delta},X_H'=\frac{df_2'}{\Delta}$
+![理想光具组联合](D:\VScode文件\markdown\光学md\理想光具组联合.png)
 
-$\Rightarrow f=-\frac{f_1f_2}{\Delta},X_H=\frac{df_1}{\Delta}$
+$\cdot\begin{cases} f'=-\frac{f_1'f_2'}{\Delta},X_H'=\frac{df_2'}{\Delta}\\f=-\frac{f_1f_2}{\Delta},X_H=\frac{df_1}{\Delta}\end{cases}$
 
 $\Phi=\frac{1}{f_1}+\frac{1}{f_2}-\frac{d}{f_1f_2}$
 
-#### 横向放大率
-$V=-\frac{ns'}{n's}$
 #### 角放大率
 $W=\frac{tanu'}{tanu}=-\frac{s}{s'}$
-#### $VW=\frac{n}{n'}$
-#### $Lagrange-Helmhotz$恒等式
+
+可得横向放大率与角放大率成反比：$VW=\frac{n}{n'}$
+
+#### $Helmhotz$公式
+
 $$yntanu=y'n'tanu'$$
 (其中$u$为光线倾角)
 
@@ -93,7 +91,7 @@ $$\frac{\delta x'}{\delta x}=-\frac{f^2}{x^2}$$
 
 像差：见PPT
 
-## $class9$
+### 光学仪器
 
 投影仪：$s\approx f$
 
@@ -125,6 +123,8 @@ $$\frac{\delta x'}{\delta x}=-\frac{f^2}{x^2}$$
 
 #### 照度，亮度见$P98.5$
 
+$tip:$与太阳能量有关的问题要从太阳的辐射出能量的通量不变下手
+
 ## 波动光学
 ### 波前
 记初相位为$-\varphi_0$
@@ -150,7 +150,9 @@ E_y=A_ycos(wt+\Delta\varphi)\\
 右旋偏振光：迎着传播方向观察，电矢量顺时针转动
 #### 马吕斯定律
 $I_\theta=I_0cos^2\theta$
-### $Fresnel$反射折射公式
+
+#### $Fresnel$反射折射公式
+
 边界处两个$Maxwell$方程$+$折射率$n\approx\sqrt{\epsilon_r}$
 $$\begin{cases}
 \vec{n}\times(E_1-E_2)=0\\
@@ -169,11 +171,14 @@ $$t_p=\frac{2cosi_1sini_2}{sin(i_1+i_2)cos(i_1-i_2)}=\frac{2n_{21}cosi_1}{n_{21}
 
 2.后一个等于号是把$n_{21}cosi_2$换成了$\sqrt{n_{21}^2-sin^2i_1}$
 
-光强（波印廷矢量）$I\propto n|E|^2$
+$\textcolor{red}{正入射}有\begin{cases}r_s=-r_p=\frac{n_2-n_1}{n_1+n_2}\\t_s=t_p=\frac{2n_1}{n_1+n_2}\end{cases}$
 
-能流（光强投影）反射率$\mathscr{R}=r^2$
+- 光强（波印廷矢量）$I\propto n|E|^2$
 
-能流（光强投影）透射率$\mathscr{T}=\frac{n_2cosi_2}{n_1cosi_1}t^2$
+- 能流（光强投影）反射率$\mathscr{R}=r^2$
+
+- 能流（光强投影）透射率$\mathscr{T}=\frac{n_2cosi_2}{n_1cosi_1}t^2$
+
 
 #### 布儒斯特角
 $r_p=0,i_b+i_2=\frac{\pi}{2}$
@@ -181,14 +186,17 @@ $r_p=0,i_b+i_2=\frac{\pi}{2}$
 $i_b=arctan(\frac{n_2}{n_1})$
 #### 斯托克斯倒逆关系
 无论是$s$分量还是$p$分量，其内反射与外反射振幅反射比$r=-r'$，相应的振幅透射比（$t_s$与$t_s'$，$t_p$与$t_p'$）总是符号相同， $tt'+r^2=1$
-## $class13$
+
+#### $tips:$
+
 自然光经过偏振片强度变为原来的一半
 
 入射光的半波损失:当且仅当$S$波和$P$波同时发生振动方向的反转，即只有**正入射**和**掠入射**的时候可能发生
 
 反射光的半波损失:介质层（折射率$n_2$）上下表面的折射率为$n_1,n_3$，当满足$n_2$为极值时两反射光有半波损失
-## 波动光学
+
 ### 干涉
+
 $$I(P)=I_1(P)+I_2(p)+2\sqrt{I_1(P)I_2(P)}cos\delta(p)$$
 #### 干涉的必要条件
 **1.频率相同**（保证积分不为0）
@@ -395,4 +403,69 @@ $$\begin{cases}主截面：晶体表面的法线方向与晶体内光轴方向�
 
 ![偏振光干涉](D:\VScode文件\markdown\偏振光干涉.png)
 
-各种光线通过巴比涅补偿器与偏振片的干涉
+考点：各种偏振光通过巴比涅补偿器与偏振片的干涉
+
+### 电光效应
+
+折射率和电场的关系可以表示为$n=n_0+aE+bE^2+...$
+
+- 二阶电光效应$kerr\ effect$
+
+  $\delta=\frac{2\pi}{\lambda}bE^2l=2\pi K_r\frac{U^2}{h^2}l$
+
+- 一阶电光效应$Pockels\ effect$
+
+  $\delta=\frac{2\pi}{\lambda}n_0^3\gamma El=\frac{2\pi}{\lambda}n_0^3\gamma U$  
+
+### 旋光效应
+
+原理：平面偏振光可以分解为两束圆偏振光的叠加
+
+$$\theta=\frac{\pi}{\lambda}|n_e-n_o|l=\alpha l$$，$\alpha$为晶体的旋光本领，$l$为光波在晶体中的传播距离（轴向厚度）
+
+自然旋光具有互易性
+
+## 光的吸收、色散和散射
+
+### 吸收
+
+- 朗伯定律
+
+  $-dI=\alpha Idx\rightarrow I=I_0e^{-\alpha x}$溶液中$\alpha=AC$
+
+- 复折射率
+
+  $\widetilde n=n(1+i\kappa)\to\widetilde E=\widetilde E_0e^{-i(wt-\frac{w}{v_p}x)}=\widetilde E_0e^{-iw(t-\frac{\widetilde n}{c}x)}=\widetilde E_0e^{-\frac{nw\kappa x}{c}}e^{-iw(t-\frac{n}{c}x)}\to I=I_0e^{-\frac{2nw\kappa x}{c}},\kappa$为衰减指数
+  
+  经典微观解释理论从电偶极子受迫振动出发$m\ddot r+\gamma\dot r+kr=-\frac{eE_0}{m}e^{-iwt}$再由电磁学理论$\widetilde n^2=\epsilon_r$
+
+### 色散
+
+> 光在介质中传播速度随波长而异的现象称为色散，定义色散率为：$\frac{dn}{d\lambda}$，根据实验定义$\frac{dn}{d\lambda}>0$为反常色散，$\frac{dn}{d\lambda}<0$为正常色散
+
+- $Cauchy$经验公式：$n=A+\frac{B}{\lambda^2}+\frac{C}{\lambda^4}$
+
+- 棱镜光谱仪
+
+### 群速
+
+> 由于波的传播，前一个时刻的相位信息经过$dt$传递到下一时刻，则有$cos[k(x_0+dx)-w(t_0+dt)]=cos[kx_0-wt_0]$$\to \frac{dx}{dt}\stackrel{\triangle}{=}v_p=\frac{w}{k}$，$v_p$为相速度
+
+群速度则对应不同频率的波叠加后包络的移动速度，考虑简单情况$\omega_1,\omega_2$两列波叠加传播，只用关注低频包络因子$cos[\Delta k(x_0+dx)-\Delta w(t_0+dt)]=cos[\Delta kx_0-\Delta wt_0]=\frac{dx}{dt}\stackrel{\triangle}{=}v_g=\frac{\Delta w}{\Delta k},v_g$为群速度
+
+- 对于连续频率的光波叠加需要用到积分和泰勒一阶展开
+
+- $v_p$与$v_g$的关系：对$w=kv_p$两边各取$k$的微分
+
+### 散射
+
+![米氏散射与瑞利散射](D:\VScode文件\markdown\光学md\米氏散射与瑞利散射.png)
+
+## 量子光学
+
+### 热辐射
+
+绝对黑体
+
+- 辐射本领与绝对温度的关系：$R=\sigma T^4\quad\sigma=5.67\times10^{-8}(W/m^2\cdot K^4)$
+- $Wien$位移定律（辐射波长与温度的关系）：$\lambda_MT=b\quad b=2.88\times10^{-3}(m\cdot K)$
