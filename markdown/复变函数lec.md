@@ -184,7 +184,9 @@ $|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
 
 ### 柯西积分定理
 
-闭域$\bar{D}$内闭路$\widetilde{C}$围成单（多）连通区域，$f(z)$在$\bar{D}$内解析，则$\int_{C}f(z)dz=0$
+> 闭域$\bar{D}$内闭路$\widetilde{C}$围成单（多）连通区域，$f(z)$在$\bar{D}$内解析
+
+$\int_{C}f(z)dz=0$
 
 考虑：是闭路？奇点在内？
 
@@ -198,31 +200,41 @@ $Q:how$ $to$ $prove?$
 
 ### 柯西积分公式
 
-若$f(z)$在闭路$C$及其所围区域$D$内解析，则$\forall a_0\in D$
+> 若$f(z)$在==闭路==$C$及其所围区域$D$内解析，则$\forall a_0\in D$
+
 $$\int_{C}\frac{f(z)}{z-a_0}dz=2\pi if(a_0)$$
+
 注意：$z$前的系数必为1
+
+若两个解析函数在边界上的值处处相等，则它们在整个区域上也恒等
 
 $prove?$ 连续+长大不等式，难点：构造出$f(z)$
 
 ### 高阶导数积分公式
 
-$\forall a_0\in D$解析域，$f(z)$有任意阶导数！！
+> $\forall a_0\in D$解析域，$f(z)$有任意阶导数！
+
 $$\int_{C}\frac{f(z)}{(z-a_0)^n}dz=\frac{2\pi i}{(n-1)!}f^{(n-1)}(a_0)$$
+
 $prove?$ $definition$+归纳+长大不等式，难点：$k-1\rightarrow k$
 
 ### 平均值公式（边界决定内部）
 
-$f(z)$在闭圆$|z-a|\leqslant R$内解析
+> $f(z)$在闭圆$|z-a|\leqslant R$内解析
+
 $$f(z)=\frac{1}{2\pi R}\int_{|z-a|=R}f(\zeta)ds$$
 
 ### 最大模原理
 
-$f(z)$在有界区域$D+C$上解析且不恒等于常数，则$\exist a\in C,s.t.|f(z)|_{max}=|f(a)|$
+> $f(z)$在有界区域$D+C$上解析且**不恒等于常数**
+
+$\exist a\in C,s.t.|f(z)|_{max}=|f(a)|$
 
 
 ### 柯西不等式（解析函数导数模的估计）
 
-设$f(z)$在$|z|\leqslant R$上解析，且**边界上**的最大值为$M(R)$，则有
+> 设$f(z)$在$|z|\leqslant R$上解析，且**边界上**的最大值为$M(R)$
+
 $$|f^{(n)}(z)|\leqslant \frac{n!M(R)}{R^n}$$
 
 ### $Liouville$定理
