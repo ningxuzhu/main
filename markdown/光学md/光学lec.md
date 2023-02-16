@@ -31,29 +31,45 @@ $$\delta\int_Q^Pndl=0$$
 ### 傍轴光线透镜物象距公式($important$)
 $$\frac{n}{s}+\frac{n'}{s'}=\frac{n'-n}{r}=\Phi$$
 $Def:\Phi=\frac{n'-n}{r}$为光焦度，单位为屈光度($D/m^{-1})$
+
+<img src="D:\VScode文件\markdown\光学md\单个球面折射.png" alt="单个球面折射" style="zoom:67%;" />
+
 #### 傍轴光线反射球面物象距公式
 $$\frac{1}{s}+\frac{1}{s'}=-\frac{2}{r}(n'\rightarrow-n,s'\rightarrow-s')$$
-#### 折射球面横向放大率公式
-$V=-\frac{ns'}{n's}$，反射球面横向放大率公式$V=-\frac{s'}{s}(n'\rightarrow-n,s'\rightarrow-s')$
+#### 横向放大率公式
+- 折射球面$V=\frac{y'}{y}=-\frac{ns'}{n's}$
+
+<img src="D:\VScode文件\markdown\光学md\横向放大率推导.png" alt="横向放大率推导" style="zoom: 67%;" />
+
+- 反射球面$V=-\frac{s'}{s}(n'\rightarrow-n,s'\rightarrow-s')$
+
 #### $Gauss$公式
 $$\frac{f'}{s'}+\frac{f}{s}=1$$
-#### $Lagrange-Helmhotz$恒等式
-$$ynu=y'n'u'$$
-（其中$u$为光线倾角）
+#### <font color=Blue>$Lagrange-Helmhotz$恒等式
+$$ynu=y'n'u'\quad其中u=\frac{h}{s},-u'=\frac{h}{s'}$$
+
+</font>
+
 ### 薄透镜动力学
-$$\frac{n}{s}+\frac{n'}{s'}=\frac{n_{l}-n}{r1}+\frac{n'-n_{l}}{r2}$$
-其中$n_{l}$为薄透镜折射率
-令$\Phi_{1}=\frac{n_{l}-n}{r_{1}},\Phi_{2}=\frac{n'-n_{l}}{r_{2}},\Phi_{1}+\Phi_{2}=\Phi$
-得到
-$$\frac{n}{s}+\frac{n'}{s'}=\Phi$$
+$$\frac{n}{s}+\frac{n'}{s'}=\frac{n_{l}-n}{r_1}+\frac{n'-n_{l}}{r_2}\quad其中n_{l}为薄透镜折射率$$
+
+令$\Phi_{1}=\frac{n_{l}-n}{r_{1}},\Phi_{2}=\frac{n'-n_{l}}{r_{2}},\Phi_{1}+\Phi_{2}=\Phi\to\frac{n}{s}+\frac{n'}{s'}=\Phi$
+
 #### 空气中磨镜者公式
 $$f=f'=\frac{1}{(n_{l}-1)(\frac{1}{r_{1}}-\frac{1}{r_{2}})}$$
+
 空气中的薄透镜物距和像距**永远**位于两侧
+
 #### 牛顿物像公式
 $$xx'=ff'$$
+
+<img src="D:\VScode文件\markdown\光学md\牛顿物像公式.png" alt="牛顿物像公式" style="zoom: 50%;" />
+
 #### 横向放大率
-$$V=-\frac{ns'}{n's}=-\frac{fs'}{f's}=-\frac{x'}{f'}=-\frac{f}{x}$$
-注意：负号是由第一次呈像的物距变为第二次呈像的像距产生的
+$$V\stackrel{tip}{=}-\frac{ns'}{n's}=-\frac{fs'}{f's}=-\frac{x'}{f'}=-\frac{f}{x}$$
+
+$tip$：负号是由第一次呈像的物距变为第二次呈像的像距产生的
+
 #### 密接薄透镜组
 $$\frac{1}{s}+\frac{1}{s'}=\frac{1}{f_{1}}+\frac{1}{f_{2}}$$
 ### 作图法（三条重要光线）
@@ -61,7 +77,7 @@ $$\frac{1}{s}+\frac{1}{s'}=\frac{1}{f_{1}}+\frac{1}{f_{2}}$$
 #### 主点和主面
 主面：过主点做垂直于光轴的平面，是横向放大率为1的一对共轭面
 
-#### 基点和基平面
+#### <font color=Blue>基点和基平面
 
 考虑两个理想光具组的联合基点为图中$H'$，由相似关系和$Gauss$公式即可推得下列公式
 
@@ -79,7 +95,9 @@ $W=\frac{tanu'}{tanu}=-\frac{s}{s'}$
 #### $Helmhotz$公式
 
 $$yntanu=y'n'tanu'$$
-(其中$u$为光线倾角)
+在傍轴情况下变为$Lagrange-Helmhotz$等式
+
+</font>
 
 ### 照相相关
 
@@ -126,30 +144,25 @@ $$\frac{\delta x'}{\delta x}=-\frac{f^2}{x^2}$$
 $tip:$与太阳能量有关的问题要从太阳的辐射出能量的通量不变下手
 
 ## 波动光学
-### 波前
-记初相位为$-\varphi_0$
-#### 平面波
-$Def:$(i)振幅为常数(ii)具有线性相位因子
+### 复振幅描述
 
-复振幅$\widetilde{U_P}=Ae^{i(\bf k\cdot \bf r+\varphi_0)}$
+光波是电磁波，是矢量横波，用两个矢量场描述：
 
-#### 球面波
-复振幅$\widetilde{U_P}=\frac{a}{r}e^{i(kr+\varphi_0)}$
+$\begin{cases}\pmb{E}(P,t)=\pmb{E}_0(P)cos[\omega t-\varphi(P)]\\\pmb{H}(P,t)=\pmb{H}_0(P)cos[\omega t-\varphi(P)]\end{cases}$
 
-$\varphi(P)=kx-$源初相位
-### 偏振光
-总设
-$$\begin{cases}
-E_x=A_xcos(wt)\\
-E_y=A_ycos(wt+\Delta\varphi)\\
-\end{cases}$$
-则“广义椭圆”的取向只取决于相位差
+通常讨论单色波场空间分布时，时间因子$e^{-i\omega t}$相同，剩下的空间分布因子$\widetilde{U_P}=A(P)e^{i\varphi(P)}$称为复振幅
 
-左旋偏振光：迎着传播方向观察，电矢量逆时针转动
+- 平面波
 
-右旋偏振光：迎着传播方向观察，电矢量顺时针转动
-#### 马吕斯定律
-$I_\theta=I_0cos^2\theta$
+  $Def:$(i)振幅为常数(ii)具有线性相位因子
+
+  复振幅$\widetilde{U_P}=Ae^{i(\bf k\cdot \bf r+\varphi_0)}$
+
+- 球面波
+
+  复振幅$\widetilde{U_P}=\frac{a}{r}e^{i(kr+\varphi_0)}$
+
+$\textcolor{red}{实际初相位与初相位相差一个负号。}$相对于初相位来说：相位落后为正，相位超前为负
 
 #### $Fresnel$反射折射公式
 
@@ -187,48 +200,53 @@ $i_b=arctan(\frac{n_2}{n_1})$
 #### 斯托克斯倒逆关系
 无论是$s$分量还是$p$分量，其内反射与外反射振幅反射比$r=-r'$，相应的振幅透射比（$t_s$与$t_s'$，$t_p$与$t_p'$）总是符号相同， $tt'+r^2=1$
 
-#### $tips:$
+#### 相位关系与半波损
 
-自然光经过偏振片强度变为原来的一半
+- 透射时不会出现相位的突变
+- 反射时由$\widetilde r_p=\frac{tan(i_1-i_2)}{tan(i_1+i_2)}=r_pe^{i\delta},\widetilde r_s=-\frac{sin(i_1-i_2)}{sin(i_1+i_2)}=r_se^{i\delta}$
+  - $单界面反射光与入射光的半波损\begin{cases}正入射(S波反向):n_1<n_2\to\widetilde r_s<0\\琼入射(S波和P波同时反向):i_1>i_b\to i_1+i_2>\frac{\pi}{2},n_1<n_2\to i_1>i_2\end{cases}$
+  - $双界面两束反射光间的半波损:\begin{cases}斜入射:介质层(折射率n_2)上下表面的折射率为n_1,n_3,当满足n_2为极值时两反射光有半波损失\end{cases}$
 
-入射光的半波损失:当且仅当$S$波和$P$波同时发生振动方向的反转，即只有**正入射**和**掠入射**的时候可能发生
-
-反射光的半波损失:介质层（折射率$n_2$）上下表面的折射率为$n_1,n_3$，当满足$n_2$为极值时两反射光有半波损失
-
-<img src="D:\VScode文件\markdown\光学md\相位损失.png" alt="相位损失" style="zoom: 67%;" />相位损失图
-
-### 干涉
+## 干涉
 
 $$I(P)=I_1(P)+I_2(p)+2\sqrt{I_1(P)I_2(P)}cos\delta(p)$$
-#### 干涉的必要条件
+
+### 干涉的必要条件
+
 **1.频率相同**（保证积分不为0）
 
 **2.存在相互平行的振动分量**
 
 **3.相位差$\delta(P)$稳定** $\delta$不固定则会出现$cos\delta$迅速变化使得$\overline{cos\delta}$为0
 
+#### 光强衬比度
+
+$$\gamma=\frac{2A_1A_2}{A_1^2+A_2^2}$$
+
+则干涉公式变为：
+
+$$I=I_0(1+\gamma cos\delta)$$
+
+其中$I_0=I_1+I_2=A_1^2+A_2^2$
+
 ### 分波前干涉
+
+<img src="D:\VScode文件\markdown\光学md\分波前装置.png" alt="分波前装置" style="zoom:50%;" />
+
+#### 杨氏双缝干涉
 
 条纹间距为
 
 $$\Delta x=\frac{D}{d}\lambda$$
 
-#### 光强衬比度
-
-$$\gamma=\frac{2A_1A_2}{A_1^2+A_2^2}$$
-则干涉公式变为：
-$$I=I_0(1+\gamma cos\delta)$$
-其中$I_0=I_1+I_2=A_1^2+A_2^2$
-
 #### 两束平行光的干涉
 
-沿$x,y$方向的条纹间距为
-$$\begin{cases}
+由两束平面波函数在波前同一点的相位差$\delta=k[(sin\alpha_1-sin\alpha_2)x+(sin\beta_1-sin\beta_2)y]$
+
+$$沿x,y方向的条纹间距为\begin{cases}
 \Delta x=\frac{\lambda}{sin\alpha_1-sin\alpha_2}\\
-\Delta y=\frac{\lambda}{cos\alpha_1-cos\alpha_2}\\
-\end{cases}$$
-空间频率为
-$$\begin{cases}
+\Delta y=\frac{\lambda}{sin\beta_1-sin\beta_2}\\
+\end{cases}\qquad空间频率为\begin{cases}
 f_x=\frac{1}{\Delta x}\\
 f_y=\frac{1}{\Delta y}\\
 \end{cases}$$
@@ -249,15 +267,13 @@ $$\gamma=|\frac{sinu}{u}|$$
 其中$u=\frac{b}{b_1}\pi$
 
 ### 分振幅干涉$\Delta L=2nhcosi_2(\pm\frac{\lambda}{2})$
-等厚干涉
-$$e.g\begin{cases}
+
+$$等厚干涉\begin{cases}
 楔形薄膜\Delta x=\frac{\lambda}{2\alpha}\\
 牛顿环R=\frac{r^2_{k+m}-r^2_k}{m\lambda}中央级数最小，牛顿环向上移动，各级数变大\\
 \end{cases}$$
 
 等倾干涉：$\Delta L=2nhcosi_2(\pm\frac{\lambda}{2})$中央级数最大，增大$h$级数变大，有$l=N\frac{\lambda}{2}$
-### 迈克尔逊干涉仪
-
 #### 光源非单色性对条纹的影响
 最大光程差（空间周期）
 $$\Delta L_M=\frac{2\pi}{\Delta k}=\frac{\lambda^2}{|\Delta \lambda|}$$
@@ -267,8 +283,8 @@ $\tau_0\Delta\nu\approx1$
 #### 光源的空间相干性
 $b\Delta \theta=\lambda$
 
-## 波动光学的一些应用
 ### 法布里-珀罗干涉
+
 $$I_T=\frac{I_0}{1+\frac{4Rsin^2(\delta/2)}{(1-R)^2}}$$
 推导需要使用**斯托克斯倒逆定理**，可以看出，$R$增大，反射条纹亮线越来越宽，透射条纹亮线越来越窄
 
@@ -282,7 +298,17 @@ $$\Delta \lambda=\frac{\lambda^2}{2\pi nhcosi}\frac{1-R}{\sqrt{R}}$$
 
 色分辨本领为：$\frac{\lambda}{\delta \lambda}=k\frac{\pi\sqrt{R}}{1-R}$
 
-### 菲涅尔圆孔衍射和圆屏衍射
+## 衍射
+
+基于：惠更斯－菲涅耳衍射积分公式
+
+$$\widetilde U(P)=\iint_\Sigma KF(\theta_0,\theta)\widetilde U(Q)\frac{e^{ikr}}{r}d\Sigma$$
+
+### 菲涅尔圆孔衍射
+
+光源-衍射屏-接收屏距离有限，或至少一个有限
+
+各个半波带次波叠加后的和振动的振幅为$A=\frac{1}{2}[A_1+(-1)^{n-1}A_n],n$为奇数$P$为亮点$,n$为偶数$P$为暗点$,n\to\infty$始终为亮点(圆屏衍射)
 
 矢量图解$P151.5$
 
@@ -292,22 +318,30 @@ $$\rho_k=\sqrt{\frac{Rb}{R+b}k\lambda}\qquad (k=1,2,...)$$
 转化成透镜公式：
 $$\frac{1}{R}+\frac{1}{b}=\frac{k\lambda}{\rho_k^2}\qquad \text{即}f=\frac{\rho_1^2}{\lambda}$$
 
-### 夫琅禾费单缝衍射和矩孔衍射
+### 单缝夫琅禾费衍射
 
-矢量图解图像：$P154图7-4$
+光源-衍射屏-接收屏距离无限
 
-光强分布：
-$$I_\theta=I_0(\frac{sin\alpha}{\alpha})^2$$
+<img src="D:\VScode文件\markdown\光学md\单缝衍射的矢量图解.png" alt="单缝衍射的矢量图解" style="zoom:50%;" />
+
+$A_0=\mathop{AB}\limits^{\frown},\vec{A_\theta}=\vec{AB}$，注意$AB=const.,R=R(\theta)$：
+
+光强分布：$$I_\theta=I_0(\frac{sin\alpha}{\alpha})^2$$
 其中$\alpha=\frac{\pi a}{\lambda}(sin\theta\pm sin\theta_0),\frac{sin\alpha}{\alpha}$为单缝衍射因子，$\theta_0$为入射光与单缝所在平面法线的夹角
 
-半角宽度：
-$$\Delta\theta=\frac{\lambda}{acos\theta_0}$$
+半角宽度：$$\Delta\theta=\frac{\lambda}{acos\theta_0}$$
 应用：由巴比涅定律，细丝所呈衍射图像与单缝所呈图像完全一致，可以用来测细丝直径
+
+夫琅禾费矩孔衍射：$I_\theta=I_0(\frac{sin\alpha}{\alpha})^2(\frac{sin\beta}{\beta})^2$
+
+其中$\alpha=\frac{\pi a}{\lambda}(sin\theta\pm sin\theta_0),\beta=\frac{\pi b}{\lambda}(sin\beta\pm sin\beta_0)$
 
 ### 光学仪器像分辨本领
 
-由于光学仪器光具组几乎都是圆形的，根据夫琅禾费圆孔衍射：$I_\theta=I_0[\frac{2J_1(x)}{x}]^2$，半角宽度为
-$$\Delta\theta=1.22\frac{\lambda}{D}$$
+由于光学成像系统中，光瞳多呈圆形。
+
+根据夫琅禾费圆孔衍射：$I_\theta=I_0[\frac{2J_1(x)}{x}]^2$，半角宽度为$$\Delta\theta=1.22\frac{\lambda}{D}$$
+
 由瑞利判据得光学仪器最小分辨角$\delta\theta_m=\Delta\theta$
 
 角放大率
@@ -322,11 +356,19 @@ $\delta\theta_e\approx1'=2.9\times10^{-4}rad$
 
 ### 多缝夫琅禾费衍射
 
+<img src="D:\VScode文件\markdown\光学md\多缝衍射的矢量图解.png" alt="多缝衍射的矢量图解" style="zoom: 50%;" />
+
+多缝=衍射+干涉
+
 相关参数：光栅常数$d=a+b$，光栅有效长度$L=Nd$
+
 $$I_\theta=a_0^2(\frac{sin\alpha}{\alpha})^2(\frac{sinN\beta}{sin\beta})^2\qquad \alpha=\frac{\pi a}{\lambda}sin\theta\quad\beta=\frac{\pi d}{\lambda}sin\theta$$
-分析思路：矢量图解法（区别：衍射时$R\propto A_0$，干涉时$R\propto a_\theta$），单缝衍射因子和缝间干涉因子相乘实现相位调制，出现缺级
+
+单缝衍射因子和缝间干涉因子相乘实现相位调制，出现缺级(干涉主极大不能出现)
 
 ### 光栅分光
+
+正弦光栅三个主极大：$\beta=0,\pi,-\pi$
 
 对于一定波长差$\delta\lambda$的两条谱线的角间隔？由光栅方程$dsin\theta_k=k\lambda$，取微分得到$\delta\theta=\frac{k\delta\lambda}{dcos\theta_k}$
 
@@ -385,6 +427,31 @@ $$sin\theta=f\lambda\qquad f_M=\frac{D}{2F\lambda}$$
 最后用与参考光$R$频率、角度相同的光源$R'$照明得到全息图像$\widetilde{U}=\widetilde{U}_{R'}\widetilde{t}(x,y)$
 
 ## 偏振光学
+
+总设
+
+$$\begin{cases}
+E_x=A_xcos(wt)\\
+E_y=A_ycos(wt+\Delta\varphi)\\
+\end{cases}$$
+
+则“广义椭圆”的取向只取决于相位差
+
+左旋偏振光：迎着传播方向观察，电矢量逆时针转动
+
+右旋偏振光：迎着传播方向观察，电矢量顺时针转动
+
+### 光强
+
+由马吕斯定律：$I_\theta=I_0cos^2\theta$
+
+- 不经过起偏器的初始光强，设$A_x=A_y=A$
+
+  $I_0=\begin{cases}自然光\int_0^{2\pi}A^2d\theta=2\pi A^2\\线偏光A_x^2+A_y^2=2A^2\\圆偏光A_x^2+A_y^2=2A^2\end{cases}$
+
+- 经过检偏器的光强，设线偏光与检偏器夹角$\alpha$
+
+  $I=\begin{cases}自然光\int_0^{2\pi}(Acos\theta)^2d\theta=\pi A^2=\frac{I_0}{2}\\线偏光(\sqrt2Acos\alpha)^2=2A^2cos^2\alpha=\frac{I_0}{2}cos^2\alpha\\圆偏光A^2=\frac{I_0}{2}\end{cases}$
 
 ### 双折射
 
@@ -496,3 +563,9 @@ $由\begin{cases}h\nu_0=h\nu+\frac{1}{2}mv^2\\\frac{h\nu_0}{c}\vec e_0=\frac{h\n
 $激光的产生\begin{cases}泵浦源\\激活介质\\谐振腔\end{cases}$
 
 激活介质要实现粒子数反转？（低能级电子少于高能级电子）
+
+------
+
+[光学(重排本) 赵凯华]:
+
+[光学重难点释疑 崔宏滨 吴强]:  
