@@ -205,7 +205,7 @@ $i_b=arctan(\frac{n_2}{n_1})$
 - 透射时不会出现相位的突变
 - 反射时由$\widetilde r_p=\frac{tan(i_1-i_2)}{tan(i_1+i_2)}=r_pe^{i\delta},\widetilde r_s=-\frac{sin(i_1-i_2)}{sin(i_1+i_2)}=r_se^{i\delta}$
   - $单界面反射光与入射光的半波损\begin{cases}正入射(S波反向):n_1<n_2\to\widetilde r_s<0\\琼入射(S波和P波同时反向):i_1>i_b\to i_1+i_2>\frac{\pi}{2},n_1<n_2\to i_1>i_2\end{cases}$
-  - $双界面两束反射光间的半波损:\begin{cases}斜入射:介质层(折射率n_2)上下表面的折射率为n_1,n_3,当满足n_2为极值时两反射光有半波损失\end{cases}$
+  - $双界面两束反射光间的半波损\begin{cases}斜入射:介质层(折射率n_2)上下表面的折射率为n_1,n_3,当满足n_2为极值时两反射光有半波损失\end{cases}$
 
 ## 干涉
 
@@ -279,7 +279,8 @@ $$等厚干涉\begin{cases}
 $$\Delta L_M=\frac{2\pi}{\Delta k}=\frac{\lambda^2}{|\Delta \lambda|}$$
 
 #### 光源的时间相干性
-$\tau_0\Delta\nu\approx1$
+$\tau_0\Delta\nu\approx1$由$\nu=\frac{c}{\lambda}\to\Delta\nu=\frac{c}{\lambda^2}\Delta\lambda\to\tau=\frac{\lambda^2}{c\Delta\lambda}$波列长度为$L=c\tau=\frac{\lambda^2}{\Delta\lambda}$
+
 #### 光源的空间相干性
 $b\Delta \theta=\lambda$
 
@@ -288,15 +289,22 @@ $b\Delta \theta=\lambda$
 $$I_T=\frac{I_0}{1+\frac{4Rsin^2(\delta/2)}{(1-R)^2}}$$
 推导需要使用**斯托克斯倒逆定理**，可以看出，$R$增大，反射条纹亮线越来越宽，透射条纹亮线越来越窄
 
-由$\delta=\frac{4\pi nhcosi}{\lambda},n$和$h$一般是不变的，影响$\delta$变化的因素有$i$和$\lambda$
+由$\delta=\frac{4\pi nhcosi}{\lambda},n$和$h$一般是不变的，影响$\delta$变化的因素有$i$和$\lambda$，记住干涉条纹的半值宽度$\varepsilon=\frac{2(1-R)}{\sqrt R}$
 
-$(1)\lambda$固定，则半角宽度为
-$$\Delta i=\frac{\lambda}{2\pi nhsini}\frac{1-R}{\sqrt{R}}$$
-$(2)i$固定(经常是0)，则某一纵模的半值宽度为
-$$\Delta \lambda=\frac{\lambda^2}{2\pi nhcosi}\frac{1-R}{\sqrt{R}}$$
-由于多光束干涉，使得在很宽的光谱范围内只有特定的波长附近出现极大$2nh=k\lambda_k,k\in\mathbb{Z}$，相邻极强频率间是等间隔的：$\Delta\nu=\frac{c}{2nh}$
+- $\lambda$固定，对$\delta=\frac{4\pi nhcosi}{\lambda}$求$i$的微分，令$d\delta=\varepsilon$则第$k$级亮纹角宽度为
 
-色分辨本领为：$\frac{\lambda}{\delta \lambda}=k\frac{\pi\sqrt{R}}{1-R}$
+  $$\Delta i_k=\frac{\lambda}{2\pi nhsini_k}\frac{1-R}{\sqrt{R}}$$
+
+- $i$固定(经常是0)，对$\delta=\frac{4\pi nhcosi}{\lambda}$求$\lambda$的微分，则某一纵模($\lambda_k$)的半值宽度为
+
+  $$\Delta \lambda_k=\frac{\lambda_k^2}{2\pi nhcosi}\frac{1-R}{\sqrt{R}}=\frac{\lambda_k}{\pi k}\frac{1-R}{\sqrt{R}}$$
+
+  由于多光束干涉，使得在很宽的光谱范围内只有特定的波长附近出现极大$2nh=k\lambda_k,k\in\mathbb{Z}$，相邻极强频率间是等间隔的：$\Delta\nu=\frac{c}{2nh}$
+
+- $i$不同$\lambda$也不同$\begin{cases}
+  2nhcosi_k=k\lambda\\
+  2nhcos(i_k+\delta i_k)=k(\lambda+\delta\lambda)\\
+  \end{cases}$得到$\delta i_k=\frac{k}{2nhsini_k}\delta\lambda$令$\delta i_k=\Delta i_k$则得到色分辨本领为：$\frac{\lambda}{\delta \lambda}=k\pi\frac{\sqrt{R}}{1-R}$
 
 ## 衍射
 
@@ -342,7 +350,7 @@ $A_0=\mathop{AB}\limits^{\frown},\vec{A_\theta}=\vec{AB}$，注意$AB=const.,R=R
 
 根据夫琅禾费圆孔衍射：$I_\theta=I_0[\frac{2J_1(x)}{x}]^2$，半角宽度为$$\Delta\theta=1.22\frac{\lambda}{D}$$
 
-由瑞利判据得光学仪器最小分辨角$\delta\theta_m=\Delta\theta$
+由瑞利判据(一个点光源的衍射图像的中央最亮处恰好与另一个点光源衍射图像的第一个最暗处相重合)得光学仪器最小分辨角$\delta\theta_m=\Delta\theta$
 
 角放大率
 $$M=\frac{\delta\theta_e}{\delta\theta_m}$$
@@ -366,19 +374,28 @@ $$I_\theta=a_0^2(\frac{sin\alpha}{\alpha})^2(\frac{sinN\beta}{sin\beta})^2\qquad
 
 单缝衍射因子和缝间干涉因子相乘实现相位调制，出现缺级(干涉主极大不能出现)
 
+光栅方程：衍射的极大值条件$d(sin\theta_0-sin\theta_j)=j\lambda,j\in\mathbb{Z}$
+
 ### 光栅分光
 
 正弦光栅三个主极大：$\beta=0,\pi,-\pi$
 
-对于一定波长差$\delta\lambda$的两条谱线的角间隔？由光栅方程$dsin\theta_k=k\lambda$，取微分得到$\delta\theta=\frac{k\delta\lambda}{dcos\theta_k}$
+- 角色散本领：由光栅方程(干涉因子取极大)$dsin\theta_k=k\lambda$，取微分得到$\delta\theta_k=\frac{k\delta\lambda}{dcos\theta_k}$整理得到$D_\theta=\frac{\delta\theta_k}{\delta\lambda}=\frac{k}{dcos\theta_k}$
+- 线色散本领：$D_l=\frac{\delta\theta_k f}{\delta\lambda}=\frac{kf}{dcos\theta_k}$
 
-$k$级条纹的角宽度：$\frac{\pi d}{\lambda}sin\theta_k=k\pi\qquad\frac{\pi d}{\lambda}sin(\theta_k+\Delta\theta)=(k+\frac{1}{N})\pi\quad\rightarrow\Delta\theta=\frac{\lambda}{Ndcos\theta_k}$
+- 对于一定波长差$\delta\lambda$的两条谱线的角间隔？由光栅方程(干涉因子取极大)$dsin\theta_k=k\lambda$，取微分得到$\delta\theta_k=\frac{k\delta\lambda}{dcos\theta_k}$
 
-由瑞利判据$\delta\theta=\Delta\theta$得最小分辨波长$\delta\lambda=\frac{\lambda}{kN}$
+  $k$级条纹的角宽度：$\frac{\pi d}{\lambda}sin\theta_k=k\pi\qquad\frac{\pi d}{\lambda}sin(\theta_k+\Delta\theta)=(k+\frac{1}{N})\pi\quad\rightarrow\Delta\theta_k=\frac{\lambda}{Ndcos\theta_k}$
+
+  由瑞利判据$\delta\theta_k=\Delta\theta_k$得最小分辨波长$\delta\lambda=\frac{\lambda}{kN}$
 
 ### 闪耀光栅
 
-由于$\alpha$中$\theta$是光线与狭缝法线的夹角，$\beta$中$\theta$则是与整个光栅平面法线夹角，传统的光栅$\theta$相同，衍射的零级主极大与干涉的零级主极大重合，导致大部分能量和信息都集中于光栅中央
+- 光栅的衍射包括单元衍射和缝间干涉两部分
+
+- $\alpha$中$\theta$是光线与狭缝法线的夹角(衍射几何像点)，$\beta$中$\theta'$则是与整个光栅平面法线夹角，传统的光栅$\theta$相同，衍射的零级主极大与干涉的零级主极大重合，导致大部分能量和信息都集中于光栅中央
+
+- 设闪耀角为$\theta_b$，第一种照明方式：$\theta=0$，一级闪耀波长$\lambda=2dsin\theta_b$；第二种照明方式：$\theta'=0$，一级闪耀波长$\lambda=dsin2\theta_b$
 
 ## 傅里叶光学
 
@@ -428,14 +445,19 @@ $$sin\theta=f\lambda\qquad f_M=\frac{D}{2F\lambda}$$
 
 ## 偏振光学
 
-总设
-
-$$\begin{cases}
+总设$\begin{cases}
 E_x=A_xcos(wt)\\
-E_y=A_ycos(wt+\Delta\varphi)\\
-\end{cases}$$
+E_y=A_ycos(wt+\delta)\\
+\end{cases}$
 
 则“广义椭圆”的取向只取决于相位差
+
+判断椭圆主轴的方向和左右旋的方法：令$t=0,E_x=A_x,E_y=A_ycos\delta\to\begin{cases}
+cos\delta>0&右上\\
+cos\delta<0&左上\\
+\end{cases}$
+
+再考虑经过时间$\Delta t$后的情况$E_y=A_ycos(\Delta t+\delta)$增大还是减小
 
 左旋偏振光：迎着传播方向观察，电矢量逆时针转动
 
@@ -489,9 +511,9 @@ $$\begin{cases}主截面：晶体表面的法线方向与晶体内光轴方向�
 
 ### 旋光效应
 
-原理：平面偏振光可以分解为两束圆偏振光的叠加
+原理：平面偏振光可以分解为两束圆偏振光的叠加，==圆偏振光的相位即旋转电矢量的角位移，相位滞后即角度倒转==
 
-$$\theta=\frac{\pi}{\lambda}|n_e-n_o|l=\alpha l$$，$\alpha$为晶体的旋光本领，$l$为光波在晶体中的传播距离（轴向厚度）
+$$\theta=\textcolor{red}{\frac{\pi}{\lambda}}|n_e-n_o|l=\alpha l$$，$\alpha$为晶体的旋光本领，$l$为光波在晶体中的传播距离（轴向厚度）
 
 自然旋光具有互易性
 
@@ -507,21 +529,21 @@ $$\theta=\frac{\pi}{\lambda}|n_e-n_o|l=\alpha l$$，$\alpha$为晶体的旋光�
 
   $\widetilde n=n(1+i\kappa)\to\widetilde E=\widetilde E_0e^{-i(wt-\frac{w}{v_p}x)}=\widetilde E_0e^{-iw(t-\frac{\widetilde n}{c}x)}=\widetilde E_0e^{-\frac{nw\kappa x}{c}}e^{-iw(t-\frac{n}{c}x)}\to I=I_0e^{-\frac{2nw\kappa x}{c}},\kappa$为衰减指数
   
-  经典微观解释理论从电偶极子受迫振动出发$m\ddot r+\gamma\dot r+kr=-\frac{eE_0}{m}e^{-iwt}$再由电磁学理论$\widetilde n^2=\epsilon_r$
+- 经典微观解释理论从电偶极子受迫振动出发$m\ddot r+\gamma\dot r+kr=-\frac{eE_0}{m}e^{-iwt}$再由电磁学理论$\widetilde n^2=\epsilon_r$
 
 ### 色散
 
 > 光在介质中传播速度随波长而异的现象称为色散，定义色散率为：$\frac{dn}{d\lambda}$，根据实验定义$\frac{dn}{d\lambda}>0$为反常色散，$\frac{dn}{d\lambda}<0$为正常色散
 
-- $Cauchy$经验公式：$n=A+\frac{B}{\lambda^2}+\frac{C}{\lambda^4}$
+- $Cauchy$经验公式：$n=A+\frac{B}{\lambda^2}(+\frac{C}{\lambda^4})$
 
 - 棱镜光谱仪
 
 ### 群速
 
-> 由于波的传播，前一个时刻的相位信息经过$dt$传递到下一时刻，则有$cos[k(x_0+dx)-w(t_0+dt)]=cos[kx_0-wt_0]$$\to \frac{dx}{dt}\stackrel{\triangle}{=}v_p=\frac{w}{k}$，$v_p$为相速度
+> 由于波的传播，前一个时刻的相位信息经过$dt$传递到下一时刻，则有$cos[k(x_0+dx)-w(t_0+dt)]=cos[kx_0-wt_0]$$\to \frac{dx}{dt}=\frac{w}{k}\stackrel{\triangle}{=}v_p$，$v_p$为相速度
 
-群速度则对应不同频率的波叠加后包络的移动速度，考虑简单情况$\omega_1,\omega_2$两列波叠加传播，只用关注低频包络因子$cos[\Delta k(x_0+dx)-\Delta w(t_0+dt)]=cos[\Delta kx_0-\Delta wt_0]=\frac{dx}{dt}\stackrel{\triangle}{=}v_g=\frac{\Delta w}{\Delta k},v_g$为群速度
+群速度则对应不同频率的波叠加后包络的移动速度，考虑简单情况$\omega_1,\omega_2$两列波叠加传播，只用关注低频包络因子$cos[\Delta k(x_0+dx)-\Delta w(t_0+dt)]=cos[\Delta kx_0-\Delta wt_0]=\frac{dx}{dt}=\frac{\Delta w}{\Delta k}\stackrel{\triangle}{=}v_g,v_g$为群速度
 
 - 对于连续频率的光波叠加需要用到积分和泰勒一阶展开
 
@@ -529,7 +551,13 @@ $$\theta=\frac{\pi}{\lambda}|n_e-n_o|l=\alpha l$$，$\alpha$为晶体的旋光�
 
 ### 散射
 
+介质的不均匀性使光线朝四面八方散射，物体尺度与波长可比拟的不均匀性引起的散射就是衍射，尺度远大于波长引起反射和折射
+
+瑞利定律适用的范围和米德拜理论适用的范围如下图
+
 ![米氏散射与瑞利散射](D:\VScode文件\markdown\光学md\米氏散射与瑞利散射.png)
+
+白昼天空是亮的是因为大气散射阳光，天是蓝的是因为短波遭到的散射比长波成分强烈得多，白云是大气中的水滴组成的，其尺度已经大于瑞利尺度，与波长关系不大
 
 ## 量子光学
 
@@ -537,12 +565,14 @@ $$\theta=\frac{\pi}{\lambda}|n_e-n_o|l=\alpha l$$，$\alpha$为晶体的旋光�
 
 绝对黑体
 
-- 辐射本领与绝对温度的关系：$R=\sigma T^4\quad\sigma=5.67\times10^{-8}(W/m^2\cdot K^4)$
+- 辐射本领(单位面积上的通量)与绝对温度的关系：$R=\sigma T^4\quad\sigma=5.67\times10^{-8}(W/m^2\cdot K^4)$
 - $Wien$位移定律（辐射波长与温度的关系）：$\lambda_MT=b\quad b=2.88\times10^{-3}(m\cdot K)$
 
 ### 光电效应
 
 $h\nu=\frac{1}{2}mv^2+A\quad A$为逸出功
+
+$\nu=\frac{c}{\lambda}$
 
 ### 康普顿效应
 

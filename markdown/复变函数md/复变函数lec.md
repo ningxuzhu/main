@@ -68,9 +68,9 @@ $\forall \varepsilon>0$，$\exists\delta>0$，当$|z-z_{0}|<\delta$时，有$|f(
 
 ### 函数的连续
 
-若$\lim\limits_{z\rightarrow z_{0}}f(z)=f(z_{0})$，那么称$f(z)$在$z_{0}$连续，推广至区域$D$连续记为$f(z)\in C(D)$
+设$f(z)=u(x,y)+iv(x,y),z_0=x_0+iy_0,则z在z_0连续的充要条件是u(x,y),v(x,y)$都在点$(x_0,y_0)$连续
 
-函数连续的充要条件：$u(x,y),v(x,y)$连续
+若$\lim\limits_{z\rightarrow z_{0}}f(z)=f(z_{0})$，那么称$f(z)$在$z_{0}$连续，推广至区域$D$连续记为$f(z)\in C(D)$
 
 #### 结论
 
@@ -98,11 +98,12 @@ $f(z)$在$z_{0}$的任一领域内都有不可微的点，则称$z_{0}$为$f(z)$
 ### $Cauchy-Riemann$ 等式(判断可微的充要条件)
 
 设$f(z)=u(x,y)+iv(x,y)$定义在区域$D$内，则$f(z)$在点$z=x+iy\in D$可微的充要条件是：
-$$
-\begin{cases}
+
+$$\begin{cases}
 (1)u(x,y),v(x,y)在点(x,y)都可微； \\
 (2)u(x,y),v(x,y)在点(x,y)满足\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}
 \end{cases}$$
+
 若$f(z)$可微，则$f'(z)=\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}$
 
 ### 单叶函数
@@ -185,7 +186,9 @@ $$\oint_{C}\frac{1}{(z-a)^n}dz=
 
 ### 长大不等式
 
-$|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant sup|f(z)|\cdot s_C$
+$f(z)$在曲线$C$上有$|f(z)|\le M,$曲线$C$的长为$l$
+
+$|\int_{C}f(z)dz|\leqslant\int_{C}|f(z)||dz|\leqslant Ml$
 
 ### 柯西积分定理
 
@@ -254,7 +257,7 @@ $$|f^{(n)}(z)|\leqslant \frac{n!M(R)}{R^n}$$
 
 $Tip:$对零点问题用反证+取倒数+最大模原理
 
-$Tip:$对外部解析的问题，构造更大的复闭路
+$Tip:$对外部解析的问题，构造更大的**复**闭路
 
 ## $chpter$ 4
 
@@ -306,17 +309,12 @@ $|z|\leqslant r,$ $0<r<1$强级数绝对收敛
 
 - $Abel$定理
 
-
-### 收敛半径
-
-实系数幂级数$\sum_{n=0}^{+\infty}|a_n|x^n$的收敛半径R是$\sum_{n=1}^{+\infty}a_n(z-a)^n$的收敛半径
-
-$R=\frac{1}{r}$其中$r=\lim\limits_{n\rightarrow+\infty}|\frac{a_{n+1}}{a_n}|$或$r=\lim\limits_{n\rightarrow+\infty}\sqrt[n]{a_n}$
+- 收敛半径：幂级数$\sum_{n=1}^{+\infty}a_n(z-a)^n$，在已知$a_n$的条件下求收敛半径：$R=\frac{1}{l}$，其中$l=\lim\limits_{n\rightarrow+\infty}|\frac{a_{n+1}}{a_n}|$或$l=\lim\limits_{n\rightarrow+\infty}\sqrt[n]{a_n}$
+- 求和函数$f(z)=\sum_{n=1}^{+\infty}a_n(z-a)^n$，对$z$求导或积分
 
 ### $Taylor$展开（必考）
 
-设$f(z)$在点$a$解析，以点$a$为半径作圆，直至碰到$f(z)$的奇点
-$$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z-a|<R}$$
+设$f(z)$在点$a$解析，以点$a$为半径作圆，直至碰到$f(z)$的奇点$$f(z)=\sum_{n=1}^{+\infty}a_n(z-a)^n(\textcolor{red}{|z-a|<R})\quad 其中a_n=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-a)^{n+1}}d\zeta=\frac{1}{n!}f^{(n)}(a_0)$$
 
 #### $steps:$
 
@@ -340,17 +338,15 @@ $$f(z)=\sum_{n=1}^{+\infty}\frac{f^{(n)}(a)}{n!}(z-a)^n\qquad \textcolor{red}{|z
 
 ### 零点
 
-$z_0$为$f(z)$的$m$级零点
+> 设$f(z)$在$z_0$点解析，且$f(z_0)=0,$则称$z_0$为$f(z)$的零点，这时$f(z)$在$z_0$点的某邻域$U$内的泰勒展开式是$f(z)=0+a_1(z-z_0)+a_2(z-z_0)^2+...+a_n(z-z_0)^n+...$
+>
 
-$\iff f(z_0)=...=f^{(m-1)}(z_0)=0,f^{(m)}(z_0)\neq0$
-
-$\iff f(z)=(z-z_0)^mg(z),g(z)$在$z_0$解析
-
-单零点：1级零点
+- $\forall n,a_n=0$则$f(z)$在$U$内恒为0
+- $\exists m,a_m\neq0,for\ n<m,a_n=0$则称$z_0$是$f(z)$的$m$级零点，$m=1$时称为单零点$\iff f(z_0)=...=f^{(m-1)}(z_0)=0,f^{(m)}(z_0)\neq0$$\iff f(z)=(z-z_0)^mg(z),g(z)$在$z_0$解析且$g(z_0)\neq0$
 
 ### $Laurent$级数
 
-$f(z)$在圆环域$D:r<|z-a|<R$中解析，则$f(z)$一定能在这个圆环中展开成罗朗级数，即$f(z)=\sum_{n=-\infty}^{+\infty}a_n(z-a)^n\qquad 其中a_n=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-a)^{n+1}}d\zeta=\frac{1}{n!}f^{(n)}(a_0)$
+$f(z)$在圆环域$D:r<|z-a|<R$中解析，$c:|\zeta-a|=\rho$，则$f(z)$一定能在这个圆环中展开成罗朗级数，即$f(z)=\sum_{n=-\infty}^{+\infty}a_n(z-a)^n(r<|z-a|<R)\qquad 其中a_n=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-a)^{n+1}}d\zeta$
 
 #### $tips:$
 
@@ -359,18 +355,19 @@ $f(z)$在圆环域$D:r<|z-a|<R$中解析，则$f(z)$一定能在这个圆环中�
 ### 奇点
 
 $$\cdot\begin{cases}
-可去奇点:1.无主要部分，\exist\rho>0,f(z)在0<|z-a|<\rho内有界；2.\lim\limits_{z\rightarrow a}f(z)=a_0\quad P101例17 \\
-极点:1.f(z)=\frac{\varphi(z)}{(z-a)^m}且\varphi(a)\neq0\rightarrow a是m级极点；2.a是函数g(z)=\frac{1}{f(z)}的m级零点；3.\lim\limits_{z\rightarrow a}f(z)=\infty\\
+可去奇点:1.无主要部分2.\exist\rho>0,f(z)在0<|z-a|<\rho内有界3.\lim\limits_{z\rightarrow a}f(z)=a_0(\neq\infty)\quad P101例17 \\
+极点:1.f(z)=\frac{\varphi(z)}{(z-a)^m}且\varphi(a)\neq0则a是m级极点2.a是函数g(z)=\frac{1}{f(z)}的m级零点3.\lim\limits_{z\rightarrow a}f(z)=\infty\\
 本性奇点:1.m=+\infty；2.\lim\limits_{z\rightarrow a}f(z)不存在\\
 \end{cases}$$
 
 #### 无穷奇点
 
-做代换$\varphi(\zeta)=f(\frac{1}{\zeta})$再讨论，此时积分区间变化
+由于$f(z)$在$\infty$总是没有意义的，所以$\infty$总是$f(z)$的奇点，设点$\infty$是$f(z)$的孤立奇点，利用倒数变换$z=\frac{1}{z'},f(z)=f(\frac{1}{z'})=\varphi(z')$变为讨论$\varphi(z')$在去心邻域$K-\{0\}$内的性质，$z'=0$为$\varphi(z')$的何种类型的奇点，则$z=\infty$为$f(z)$的何种类型的奇点
 
 #### $tips:$
 
-$1=e^{i\theta}e^{-i\theta}$的运用$P104.6$
+1. 若$f(z)=\frac{\varphi(z)}{h(z)},a$是函数$h(z)$的$m$级零点且$\varphi(z)$在$a$点解析$,\varphi(a)\neq0,$则$a$是函数$f(z)$的$m$级极点
+2. $1=e^{i\theta}e^{-i\theta}$的运用$P104.6$
 
 ## $chapter$ 6
 
@@ -383,7 +380,7 @@ $$\cdot
 \begin{cases}
 Res[f(z),a]=a_{-1}  & \text{a为本性奇点\&else}\\
 Res[f(z),a]=\frac{1}{(m-1)!}\lim\limits_{z\rightarrow a}\frac{d^{m-1}}{dz^{m-1}}[(z-a)^mf(z)]\textcolor{red}{或:待定系数法(基的观点)}  & \text{a为m级极点}\\
-Res[\frac{P(z)}{Q(z)},a]=\frac{P(a)}{Q'(a)}\textcolor{red}{(只适用于1级)} & \text{a为1级极点}
+Res[\frac{P(z)}{Q(z)},a]=\frac{P(a)}{Q'(a)}\textcolor{red}{(只适用于1级)}P(a)\neq0,Q(a)=0 & \text{a为1级极点}
 \end{cases}$$
 
 ### 积分计算
@@ -398,9 +395,13 @@ $C$内含有两个奇点（且其中一个为本性奇点），*分开计算*留
 >
 > 当$\rho$充分小，$f(z)$在$C_{\rho}:z=a+\rho e^{i\theta},\alpha\leqslant\theta\leqslant\beta$上**连续**，且$\lim\limits_{z\rightarrow a}(z-a)f(z)=k$，则$\lim\limits_{\rho\rightarrow0}\int_{C_{\rho}}f(z)dz=i(\beta-\alpha)k$
 >
+> $k=Res[f(z),a],\beta-\alpha=-\pi$
+>
 > #### 大圆弧定理
 >
 > $C_{\rho}:|z|=R>R_0,f(z)$在$D:|z|>R_0,0\le argz\le\alpha,0<\alpha\le2\pi$内**连续**，且$\lim\limits_{z\rightarrow \infty}zf(z)=k$，则$\lim\limits_{\rho\rightarrow\infty}\int_{C_{\rho}}f(z)dz=i\alpha k$
+>
+> $k=0$
 >
 > #### 约当定理
 >
@@ -482,6 +483,14 @@ $$w=\frac{az+b}{cz+d},\quad ad-bc\neq0$$
 规定：$w(-\frac{d}{c})=+\infty,w(\infty)=\frac{a}{c}$，满足**黎曼定理**
 $$w=\frac{az+b}{cz+d}=\overbrace{\frac{a}{c}}^{T}+\overbrace{|\frac{b}{c}-\frac{ad}{c^2}|}^{S}\overbrace{exp\{iarg(\frac{b}{c}-\frac{ad}{c^2})\}}^{R}\overbrace{\frac{1}{z+\frac{d}{c}}}^{I}$$
 
+$S:$以原点为相似中心做伸张系数为$r$的相似变换
+
+$R:$图像绕原点逆时针旋转$\theta$角度，形状大小保持不变
+
+$I:$把单位圆内变为单位圆外，把单位圆外变为单位圆内；将不过原点不含原点的圆周变成不过原点不含原点的圆周，内部$\to$内部；把过原点的圆周变为直线；把过原点的直线变成另一条过原点的直线
+
+分式线性变换把圆周(含直线)变成圆周(含直线)
+
 ### 寻找分式变换
 
 - 任给$z$平面上三个不同点$z_1,z_2,z_3$和$w$平面上三个不同点$w_1,w_2,w_3$，存在一个唯一的分式线性变换把$z_1,z_2,z_3$分别变成$w_1,w_2,w_3$
@@ -506,9 +515,9 @@ $$w=\frac{az+b}{cz+d}=\overbrace{\frac{a}{c}}^{T}+\overbrace{|\frac{b}{c}-\frac{
 
   $w=e^{i\theta}\frac{z-z_0}{1-z\bar{z_0}}$
 
-- 二角形$\rightarrow$上半平面
+- 二角形$\rightarrow$角域
 
-  $\varphi_1=\frac{z-顶点1}{z-顶点2}$
+  $w=\frac{z-顶点1}{z-顶点2}$
   
 - 将（原像）条形域变成角域用指数函数$e^z$，将（原像）角域变成条形域用对数函数主值$lnz$
 
@@ -528,7 +537,7 @@ $$L[1]=\frac{1}{p}\\L[e^{at}]=\frac{1}{p-a}\\L[cos\omega t]=\frac{p}{p^2+\omega^
 
 #### 本函数的微分
 
-$$L[f^{(n)}(t)]=p^nL[f(t)]-p^{n-1}f(+0)+p^{n-2}f^{(1)}(+0)+...+f^{(n-1)}(+0)$$
+$$L[f^{(n)}(t)]=p^nL[f(t)]-p^{n-1}f(+0)-p^{n-2}f^{(1)}(+0)+...-f^{(n-1)}(+0)$$
 
 #### 本函数的积分
 
